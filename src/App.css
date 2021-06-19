@@ -1,17 +1,124 @@
+.hero {
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1568199665145-ffa8e6f520da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1338&q=80");
+  background-size: cover;
+  background-position: 80%, 50%;
+}
+.hero img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(24, 28, 48, 0.7);
+  z-index: 10;
+}
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel .carousel-item {
+  height: 90vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 90vh;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+}
+.cardsImg {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
 }
+
+.cards h3 {
+  margin-bottom: 2rem;
+}
+
+.cards img {
+  height: 400px;
+}
+
+.cards > div {
+  padding: 2rem;
+}
+.card-img-overlay {
+  background: rgba(7, 26, 134, 0.7)
+}
+.card-overlay {
+  background: rgba(7, 26, 134, 0.7)
+}
+/* .cards:nth-child(even) img {
+  order: 2;
+} */
+/* Footer */
+.footer {
+  color: #ffff;
+  min-height: 150px;
+  background-color: rgba(7, 26, 134, 0.95);
+  
+}
+.minHeight {
+position: relative;
+}
+.kranmarkt {
+  height: 100px;
+  width: 100px;
+}
+.nw {
+  
+}
+.partners {
+  min-height: 3rem;
+}
+.costumers {
+  min-height: 3rem;
+}
+.copyright {
+  min-height: 3rem;
+}
+
+/* Margins */
+
+.margin50 {
+  margin-top: 150px;
+}
+.vertical-center {
+  margin-top: 50%;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -23,16 +130,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.centered {
+  font-size: 42px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+  padding-top:132px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@media only screen and (max-width: 789px) {
+  .cards {
+    display: block;
   }
 }
