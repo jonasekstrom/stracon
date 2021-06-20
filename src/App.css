@@ -141,7 +141,52 @@ position: relative;
 body{
   padding-top:132px;
 }
-
+#services {
+  background: url(../src/img/bakgrunder/patrik.jpg) no-repeat top center fixed;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background: rgba(70, 99, 91, 0.4);
+}
+.anchor {
+  position: absolute;
+  transform: translateY(-50vh);
+}
+/* Contact icons */
+#box{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 100%;
+border: 1px solid teal;
+}
+.dot{
+    position: absolute;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    background: rebeccapurple;
+}
+#box img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+border-radius: 100%;
+  -webkit-transition: all 1s;
+}
 
 @media only screen and (max-width: 789px) {
   .cards {

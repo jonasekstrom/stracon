@@ -16,7 +16,7 @@ function Navbar() {
           />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler mx-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -71,11 +71,16 @@ function Navbar() {
                   <HashLink to="/om-oss#vision" className="dropdown-item">
                     Vår Vision
                   </HashLink>
+                  </li>
+                <li>
+                  <HashLink to="/om-oss#vardeord" className="dropdown-item">
+                    Våra Värdeord
+                  </HashLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Vilka är vi?
-                  </a>
+                  <HashLink to="/om-oss#teamet" className="dropdown-item">
+                    Teamet
+                  </HashLink>
                 </li>
               </ul>
             </li>

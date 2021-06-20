@@ -53,25 +53,27 @@ function Contact() {
       <div className="container">
         <h1 className="text-center my-5">Kontakta Oss</h1>
         <div
-          className="row justify-content-center"
+          className="row justify-content-start"
           data-aos="flip-up"
           data-aos-once="true"
         >
-          <div className="col-6 text-center my-auto">
-            {" "}
+           <div className="col text-center my-auto">
+            
             <a
               href="mailto:info@stracon.com"
               className=" text-decoration-none text-reset"
             >
-              <i className="far fa-envelope fa-4x me-4"> </i>info@stracon.se
-            </a>{" "}
+              <i className="far fa-envelope fa-4x d-block"> </i>
+              info@stracon.se
+            </a>
+           
           </div>
-          <div className="col-6 text-center">
+          <div className="col text-center">
             <a
               href="tel:+46(0)70562354"
               className=" text-decoration-none text-reset"
             >
-              <i className="fas fa-phone-square fa-4x me-4"></i>+46(0)70562354
+              <i className="fas fa-phone-square fa-4x d-block"></i>+46(0)70562354
             </a>
           </div>
         </div>
@@ -80,19 +82,20 @@ function Contact() {
           data-aos="flip-up"
           data-aos-once="true"
         >
-          <div className="col-3 text-center">
+          <div className="col text-center">
             {" "}
             <i className="fab fa-linkedin-in fa-4x me-4"></i>
           </div>
-          <div className="col-3 text-center">
+          <div className="col text-center">
             <i className="fab fa-facebook-square fa-4x me-4"></i>
           </div>
-          <div className="col-3 text-center">
+          <div className="col text-center">
             {" "}
             <i className="fab fa-instagram-square fa-4x me-4"></i>
           </div>
-        </div>
-        <div className="mx-auto w-50 margin50">
+        </div> 
+        <div className="container">
+        <div className="mx-auto col col-md-8 margin50">
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="form-group">
               <label htmlFor="name">Namn:</label>
@@ -157,7 +160,7 @@ function Contact() {
                         ></button>
                       </div>
                       <div className="modal-body">
-                        Privacy policy Prodeff AB is committed to protecting and
+                        Privacy policy Stracon AB is committed to protecting and
                         respecting your privacy. This privacy policy describes
                         how we collect and use your personal data when you apply
                         for a job or get in touch with us regarding a job
@@ -165,12 +168,15 @@ function Contact() {
                         you regarding our use of your personal data. Please read
                         this privacy policy before submitting your application.
                         By submitting your application, you accept this privacy
-                        policy and our processing of your personal data. Prodeff
+                        policy and our processing of your personal data. Stracon
                         AB is the responsible entity (controller) for the
                         processing of your personal data as described herein.
-                        Please do not hesitate to reach out to info@prodeff.se
+                        Please do not hesitate to reach out to info@Stracon.se
                         if you have any questions or comments regarding your
-                        privacy. 1. Personal information that we handle During
+                        privacy.
+                        <br/> 
+                        <br/>
+                        1. Personal information that we handle During
                         the recruitment process, we will collect and process
                         personal data about you. Depending on the circumstances,
                         such personal data may include the categories of data
@@ -211,33 +217,39 @@ function Contact() {
                         regulatory obligations placed upon us with regard to our
                         hiring. Because email communications are not always
                         secure, we encourage you to not include sensitive data
-                        in your emails to us. 2. How we gather your personal
+                        in your emails to us.
+                        <br/> 
+                        <br/>
+                        2. How we gather your personal
                         information Information you give to us. Most of the
-                        information Prodeff AB collects about you is received
+                        information Stracon AB collects about you is received
                         directly from you, for example from your application and
                         during interviews. You can always choose not to provide
                         us certain information. However, not providing requested
                         personal data may affect or prevent us from evaluating
                         your application or consider you as a candidate.
-                        Information we collect about you. Prodeff AB may also
+                        Information we collect about you. Stracon AB may also
                         collect personal data about you from third parties, such
                         as professional recruiting firms, your references and
                         prior employers. Sometimes we may also obtain personal
                         data from publicly available sources, such as your
                         profile on LinkedIn, Facebook and other publicly
-                        available information. 3. How your information will be
-                        used Prodeff AB will process your personal data in a
+                        available information.
+                        <br/> 
+                        <br/>
+                        3. How your information will be
+                        used Stracon AB will process your personal data in a
                         conventional and regular recruitment manner. For
                         example, we may need to process your data to enter into
                         a contract with you regarding the employment. This also
                         includes taking steps prior to entering into a contract
-                        with you. Prodeff AB also have a legitimate interest in
+                        with you. Stracon AB also have a legitimate interest in
                         processing your personal data during the recruitment
                         process and for keeping records of the process.
                         Processing data from job applicants allows us to manage
                         the recruitment process, assess and confirm a
                         candidate’s suitability for employment and choose
-                        between candidates. Prodeff AB will process your
+                        between candidates. Stracon AB will process your
                         personal data for the following purposes: To manage all
                         aspects of the recruitment process. Your personal data
                         will be used to manage your job application, to assess
@@ -249,7 +261,7 @@ function Contact() {
                         communicate with you before, during and after the
                         recruitment process. For example, in order to schedule
                         interviews and tests, provide you with feedback and
-                        inform you of other open positions at Prodeff AB. To
+                        inform you of other open positions at Stracon AB. To
                         consider you for other positions. We may use your
                         personal data to consider you for other positions than
                         the one you are applying for, or for potential future
@@ -264,10 +276,13 @@ function Contact() {
                         respond to and defend us against legal claims. To manage
                         your employment with us. In the event of your
                         application resulting in the offer and your acceptance
-                        of a position at Prodeff AB, the data collected will
+                        of a position at Stracon AB, the data collected will
                         become part of your employment record and will be used
                         for employment purposes, in accordance with our employee
-                        privacy policy. 4. How we share your information Prodeff
+                        privacy policy.
+                        <br/> 
+                        <br/>
+                        4. How we share your information Stracon
                         AB may share your personal information with our
                         employees and other trusted parties, to the extent
                         required to manage the recruitment process: Our
@@ -298,20 +313,26 @@ function Contact() {
                         also share your personal information where you ask or
                         permit us to. For example, we may share necessary
                         information about you with the references you have
-                        provided, to make any necessary reference checks. 5.
-                        Where we process your personal data Prodeff AB always
+                        provided, to make any necessary reference checks.
+                        <br/> 
+                        <br/>
+                        5.
+                        Where we process your personal data Stracon AB always
                         strives to process and store your data within the
                         EU/EEA. However, your data may in certain situations be
                         transferred to, and stored at, a destination outside of
                         the EU/EEA territory. Please note that privacy laws in
                         countries outside of the EU/EEA may not be the same as,
                         and in some cases may be less protective than, privacy
-                        laws in your country. Prodeff AB will however take all
+                        laws in your country. Stracon AB will however take all
                         steps necessary to ensure that adequate safeguards (for
                         example, EU standard Model Clauses and Privacy Shield)
                         are in place to protect your personal information and to
-                        make sure it is treated securely. 6. How long we keep
-                        your personal data Prodeff AB keeps your personal data
+                        make sure it is treated securely.
+                        <br/> 
+                        <br/>
+                        6. How long we keep
+                        your personal data Stracon AB keeps your personal data
                         only as long as necessary for the recruitment process.
                         However, we may keep your personal data up to two years
                         after the position has been filled. The reason for this
@@ -330,7 +351,10 @@ function Contact() {
                         has been successful and you are hired, the data
                         collected will become part of your employment record and
                         will be used for employment purposes, in accordance with
-                        our employee privacy policy. 7. Your rights Right to
+                        our employee privacy policy.
+                        <br/> 
+                        <br/>
+                        7. Your rights Right to
                         object. You have right to object to processing based on
                         legitimate interest. This means we may no longer process
                         the personal data unless we can demonstrate compelling
@@ -361,15 +385,21 @@ function Contact() {
                         that legal rights or obligations (such as privacy and
                         confidentiality legislation) may prevent us from
                         disclosing or transfer all or part of your information,
-                        or from immediately deleting your information. 8. How to
-                        contact us Prodeff AB is the responsible entity
+                        or from immediately deleting your information.
+                        <br/> 
+                        <br/>
+                        8. How to
+                        contact us Stracon AB is the responsible entity
                         (controller) for the processing of your personal data as
                         described above. We are subject to Swedish data
                         protection legislation, including the General Data
                         Protection Regulation (GDPR). If you have any questions
                         or comments on this privacy policy or about our use of
                         your personal data, please contact us at
-                        info@prodeff.se. 9. Complaints You have the right to
+                        info@Stracon.se.
+                        <br/> 
+                        <br/>
+                        9. Complaints You have the right to
                         lodge a complaint to the Swedish Supervisory Authority,
                         if you believe that we have not complied with our
                         obligations regarding your personal data.
@@ -392,6 +422,7 @@ function Contact() {
               Skicka
             </button>
           </form>
+        </div>
         </div>
       </div>
     </div>
