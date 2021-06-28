@@ -52,9 +52,9 @@ function Contact() {
         <div class="centered text-white">Kontakta Oss</div>
       </div>
       <div className="container">
-        <h1 className="text-center my-5">Kontakta Oss</h1>
+        
         <div
-          className="row justify-content-start"
+          className="row justify-content-start mt-5"
           data-aos="flip-up"
           data-aos-once="true"
         >
@@ -96,7 +96,13 @@ function Contact() {
           </div>
         </div> 
         <div className="container">
+ 
+        <span class="anchor" id="formular"></span>
+
         <div className="mx-auto col col-md-8 margin50">
+        <h5 className="mb-5">Vill du få en offert eller veta mer om våra tjänster? Använd kontaktformuläret nedan, så svarar vi dig så snart vi kan. 
+
+</h5>
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="form-group">
               <label htmlFor="name">Namn:</label>

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 const placeholderText = [
@@ -43,7 +45,7 @@ function Assignments() {
       </div>
 
       <div className="container pt-5">
-        <section className="row row-cols-1 row-cols-md-3 g-4 margin50 justify-content-center mb-5">
+{/*         <section className="row row-cols-1 row-cols-md-3 g-4 margin50 justify-content-center mb-5">
           <div className="col" data-aos="fade-right">
             <div className="card bg-dark text-white">
               <img
@@ -126,8 +128,8 @@ function Assignments() {
               </div>
             </div>
           </div>
-        </section>
-        <section>
+        </section> */}
+        <section className="mt-5">
           <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <div className="col" data-aos="fade-right">
               <div class="card h-100">
@@ -141,7 +143,10 @@ function Assignments() {
                   <p class="card-text text-center text-md-left">
                   Genomförande av sälj/marknads projekt
                   </p>
-                  <a href="#" class="btn btn-warning float-end">Få Offert</a>
+                  
+                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
+                  Få Offert
+                  </HashLink>
 
                 </div>
               </div>
@@ -158,7 +163,9 @@ function Assignments() {
                   <p class="card-text text-center text-md-left">
                   Leda, motivera, coacha avdelningar eller arbetsgrupper
                   </p>
-                  <a href="#" class="btn btn-warning float-end">Få Offert</a>
+                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
+                  Få Offert
+                  </HashLink>
 
                 </div>
               </div>
@@ -175,7 +182,9 @@ function Assignments() {
                   <p class="card-text text-center text-md-left">
                   Utbilda dina försäljare, tekniker, montörer i relations försäljning
                   </p>
-                  <a href="#" class="btn btn-warning float-end">Få Offert</a>
+                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
+                  Få Offert
+                  </HashLink>
 
                 </div>
               </div>
@@ -194,7 +203,9 @@ function Assignments() {
 
 
                   </p>
-                  <a href="#" class="btn btn-warning float-end">Få Offert</a>
+                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
+                  Få Offert
+                  </HashLink>
 
                 </div>
               </div>
@@ -213,7 +224,9 @@ function Assignments() {
                   Snabb tillsättning, vikariat, deltid
 
 </p>
-                  <a href="#" class="btn btn-warning float-end">Få Offert</a>
+                             <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
+                  Få Offert
+                  </HashLink>
 
                 </div>
               </div>
