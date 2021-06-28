@@ -49,6 +49,7 @@ function Contact() {
           src="https://images.unsplash.com/photo-1614326014420-1f0c741ca7e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
           alt="Eriksberg"
         />
+        <div class="centered text-white">Kontakta Oss</div>
       </div>
       <div className="container">
         <h1 className="text-center my-5">Kontakta Oss</h1>

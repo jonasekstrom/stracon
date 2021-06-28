@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import Topbar from "./components/Topbar/Topbar";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Landing from './components/Landing/Landing';
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
     <div className="container-fluid p-0">
+    <Topbar />
       <Navbar />
       <Route exact path="/" component={Landing} />
       <Switch>

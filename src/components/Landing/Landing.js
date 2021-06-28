@@ -11,34 +11,14 @@ function Landing() {
 
   return (
     <div>
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-pause="false"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={Hunken} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h2>Stracon</h2>
-              <p>Kundfokus, pålitlighet och engagemang.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://images.unsplash.com/photo-1576256932046-62148e2efdce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-              className="d-block w-100"
-              alt="..."
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h2>Stracon</h2>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
+            <div className="hero">
+        <img
+          src={Hunken}
+          alt="Eriksberg"
+        />
+        <div class="centered text-white text-center">
+        <h2>Stracon</h2>
+        <h6>Pålitlighet, Engagemang, Kundfokus</h6></div>
       </div>
 
       <div className="container p-5">
@@ -54,7 +34,7 @@ function Landing() {
             skillnad i sina organisationer och resultat.
           </p>
         </div>
-        <div
+        {/* <div
           className="row row-cols-3 align-items-stretch py-5"
           data-aos="fade-right"
         >
@@ -123,8 +103,8 @@ function Landing() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <section id="services" className="py-5 my-5 text-white">
         <div className="container">
           <div className="row text-center text-white">

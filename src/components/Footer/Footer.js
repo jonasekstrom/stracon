@@ -14,13 +14,13 @@ function Footer() {
       <section className="container">
         <h6 className="text-center pb-2">I samarbete med</h6>
         <div className="row">
-          <div className="col text-center">
-            <img src={Kranmarkt} alt="Kranmärkt" className="img-fluid" />
+          <div className="col text-center my-auto">
+            <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />
           </div>
           <div className="col text-center">
             <img src={BRG} alt="Kranmärkt" className="img-fluid" />
           </div>
-          <div className="col text-center">
+          <div className="col text-center my-auto">
             <img src={KompetensPlus} alt="Kranmärkt" className="img-fluid" />
           </div>
 

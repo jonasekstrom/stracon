@@ -6,7 +6,7 @@ import Logo from "../../img/Stracon logo färg.JPG";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom border-primary fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand ms-4">
           <img
@@ -93,17 +93,6 @@ function Navbar() {
               >
                 KONTAKTA OSS
               </Link>
-            </li>
-            <li className="nav-item">
-            <a href="/#" className="me-1 text-decoration-none text-reset">
-            <i className="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="/#" className="me-1 text-decoration-none text-reset">
-            <i className="fab fa-instagram fa-2x"></i>
-          </a>
-          <a href="/#" className="me-1 text-decoration-none text-reset">
-            <i className="fab fa-linkedin fa-2x"></i>
-          </a>
             </li>
           </ul>
         </div>

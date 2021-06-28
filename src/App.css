@@ -138,9 +138,7 @@ position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body{
-  padding-top:132px;
-}
+
 #services {
   background: url(../src/img/bakgrunder/patrik.jpg) no-repeat top center fixed;
   background-size: cover;
