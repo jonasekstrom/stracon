@@ -17,9 +17,42 @@ function About() {
             src="https://images.unsplash.com/photo-1513108500008-edfde4c0f59c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
             alt="Eriksberg"
           />
+          <div class="centered text-white">Om Oss</div>
         </div>
       </div>
+      <section className="text-center margin50">
+        <div className="container">
+        
+          <span class="anchor" id="historik"></span>
 
+          <section class="cards shadow" data-aos="fade-right">
+            <div>
+              <h2>Historik</h2>
+              <p>
+                Stracon är ett nyetablerat företag, till en början ett en-mans
+                företag som hyr ut rådgivningstjänster med ambitionen att verka
+                tillsammans med och hjälpa industri företag i och runt Göteborgs
+                med en tryggare och mer hållbar tillväxt. I förlängningen vill
+                företaget också erbjuda bemanningstjänster mot samma kund.
+                <br />
+                <br />
+                Stracon som är en förkortning av orden Strandberg och
+                Consulting, är namnet på företaget som etablerades 2021 i
+                svallvågorna av en pandemi. Möjligheterna visade sig och
+                företagets byggdes på grunden av att vilja att stötta andra i
+                näringslivet som kan behöva hjälp med tid, kunskap och
+                erfarenhet för stunden, oavsett om det handlar om uppbyggnad av
+                en hel marknadsplattform eller förstärkning av en ägares roll i
+                strategi eller ledarskap.
+              </p>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
+              alt=""
+            />
+          </section>
+        </div>
+      </section>
       <section className="text-center margin50">
         <div className="container">
           <span class="anchor" id="affarside"></span>
@@ -32,40 +65,43 @@ function About() {
             <div>
               <h2>Affärsidé</h2>
               <p>
-                Stracon ska med stort fokus sälja och leverera väl matchade
+                Stracon ska med stort kundfokus sälja och leverera väl matchade
                 kundlösningar med pålitlighet, lyhördhet och engagemang. Varje
-                bemanningsuppdrag ska matchas individuellt, noga och rätt.
-                Tjänsterna som levereras ska utveckla kompetens, motivation
-                eller resultat för kunden som troligt är en liten eller
-                medelstor organisation inom den nationella industri eller bygg
-                sektorn.
+                bemanningsuppdrag ska matchas individuellt, hållbart och
+                fördomsfritt. Tjänsterna som levereras ska utveckla kompetens,
+                motivation eller resultat för kunden som troligt är en snabbt
+                växande liten eller medelstor organisation inom den nationella
+                industri eller bygg sektorn.
               </p>
             </div>
           </section>
         </div>
       </section>
-      <span class="anchor" id="vision"></span>
+      <span class="anchor" id="kvalitet"></span>
 
-      <section className="container margin50 text-center">
-        <section class="cards shadow" data-aos="fade-right">
-          <div>
-            <h2>Vision</h2>
-            <p>
-              Stracon ska vara en av regionens ledande leverantörer av konsult
-              uthyrning inom försäljning, och kundkommunikation. Vårt fokus
-              ligger mot industrisektorn och inom teknikområdena tunga lyft och
-              storkök
-            </p>
-          </div>
-          <img
-            src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
-            alt=""
-          />
-        </section>
+      <section className="margin50 text-center">
+        <div className="container">
+          <section class="cards shadow" data-aos="fade-right">
+            <div>
+              <h2>Kvalitét</h2>
+              <p>
+                Stracon ska leverera en högre kvalitét som lever upp till och
+                överträffar våra kunders förväntningar. Med en säker matchning
+                genom kompetensbaserade intervjuer och effektiva
+                bakgrundskontroller kvalitetssäkrar vi varje konsult innan
+                påbörjat uppdrag.
+              </p>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
+              alt=""
+            />
+          </section>
+        </div>
       </section>
-      <span class="anchor" id="vardeord"></span>
+      <span class="anchor" id="vardegrund"></span>
       <section className="container margin50 text-center">
-        <h3>VÅRA VÄRDEORD</h3>
+        <h3>Värdegrunder</h3>
         <div className="row justify-content-center mt-5 d-none d-md-flex">
           <div
             className="col-6 rounded-circle bg-light p-5 shadow"
@@ -138,10 +174,21 @@ function About() {
               </p>
               <hr />
               <p>
-                <i class="fas fa-phone"></i>07755455245
+              <a
+              href="tel:+46(0)709-666464"
+              className=" text-decoration-none text-reset"
+            >
+              <i className="fas fa-phone-square me-1"></i>+46(0)709-666464
+            </a>
               </p>
               <p>
-                <i class="fas fa-envelope-open"></i> patrik@stracon.se{" "}
+              <a
+              href="mailto:info@stracon.se"
+              className=" text-decoration-none text-reset"
+            >
+              <i className="far fa-envelope fa me-1"> </i>
+              info@stracon.se
+            </a>
               </p>
             </div>
           </div>

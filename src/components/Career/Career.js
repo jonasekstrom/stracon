@@ -64,19 +64,22 @@ function Career() {
           src="https://images.unsplash.com/photo-1614326014420-1f0c741ca7e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
           alt="Eriksberg"
         />
-        <div class="centered text-white">Söker du ny tjänst?</div>
+        <div class="centered text-white">Söker du nya utmaningar?</div>
       </div>
       <div className="container">
         <h1 className="text-center my-5">Spontanansökan</h1>
-        <p>
-          Om du är intresserad av jobb på Stracon är du välkommen att
+        <div className="mx-auto col col-md-8">
+          Om du är intresserad av ett uppdrag hos Stracon är du välkommen att
           skicka in ditt CV och personliga brev här. Vi ser över
-          spontanansökningar som kommit in med jämna mellanrum och om vi har
-          behov av att rekrytera till en position där din kompetens och bakgrund
-          passar kommer vi att höra av oss.
-        </p>
+          spontanansökningar som kommit in med jämna mellanrum, vi kontaktar dig
+          för en profileringsintervju och informationsmöte. <br/> <br/>Därefter får du
+          besked om du läggs in i vårt konsultarkiv och kvalificeras till en
+          djupintervju. <br/> <br/>När ett uppdrag kommer in som matchar din profil så
+          kommer vi att höra av oss för ett eventuellt inledande möte med
+          kunden.
+        </div>
 
-        <div className="mx-auto col col-md-8 margin50">
+        <div className="mx-auto col col-md-8 mt-5 bg-light p-5 rounded shadow-lg">
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="form-group">
               <label htmlFor="name">Namn:</label>
@@ -97,17 +100,6 @@ function Career() {
                 placeholder=""
               />
             </div>
-            <div className=" mt-3">
-              <label for="selectGender" class="form-label">
-                Kön:
-              </label>
-              <select class="form-select form-select" id="selectGender">
-                <option selected>Välj</option>
-                <option value="1">Kvinna</option>
-                <option value="2">Man</option>
-                <option value="3">Ospecifierat</option>
-              </select>
-            </div>
             <div className="mt-3">
               <label for="selectBirthyear" className="form-label">
                 Födelseår:
@@ -126,6 +118,12 @@ function Career() {
             <div class="mt-3">
               <label for="formFile" class="form-label">
                 Personligt brev:
+              </label>
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+            <div class="mt-3">
+              <label for="formFile" class="form-label">
+                Foto:
               </label>
               <input class="form-control" type="file" id="formFile" />
             </div>
@@ -166,7 +164,7 @@ function Career() {
                         ></button>
                       </div>
                       <div className="modal-body">
-                      Privacy policy Stracon AB is committed to protecting and
+                        Privacy policy Stracon AB is committed to protecting and
                         respecting your privacy. This privacy policy describes
                         how we collect and use your personal data when you apply
                         for a job or get in touch with us regarding a job
@@ -180,10 +178,10 @@ function Career() {
                         Please do not hesitate to reach out to info@Stracon.se
                         if you have any questions or comments regarding your
                         privacy.
-                        <br/> 
-                        <br/>
-                        1. Personal information that we handle During
-                        the recruitment process, we will collect and process
+                        <br />
+                        <br />
+                        1. Personal information that we handle During the
+                        recruitment process, we will collect and process
                         personal data about you. Depending on the circumstances,
                         such personal data may include the categories of data
                         listed below. Please note that the examples listed under
@@ -224,38 +222,36 @@ function Career() {
                         hiring. Because email communications are not always
                         secure, we encourage you to not include sensitive data
                         in your emails to us.
-                        <br/> 
-                        <br/>
-                        2. How we gather your personal
-                        information Information you give to us. Most of the
-                        information Stracon AB collects about you is received
-                        directly from you, for example from your application and
-                        during interviews. You can always choose not to provide
-                        us certain information. However, not providing requested
-                        personal data may affect or prevent us from evaluating
-                        your application or consider you as a candidate.
-                        Information we collect about you. Stracon AB may also
-                        collect personal data about you from third parties, such
-                        as professional recruiting firms, your references and
-                        prior employers. Sometimes we may also obtain personal
-                        data from publicly available sources, such as your
-                        profile on LinkedIn, Facebook and other publicly
-                        available information.
-                        <br/> 
-                        <br/>
-                        3. How your information will be
-                        used Stracon AB will process your personal data in a
-                        conventional and regular recruitment manner. For
-                        example, we may need to process your data to enter into
-                        a contract with you regarding the employment. This also
-                        includes taking steps prior to entering into a contract
-                        with you. Stracon AB also have a legitimate interest in
-                        processing your personal data during the recruitment
-                        process and for keeping records of the process.
-                        Processing data from job applicants allows us to manage
-                        the recruitment process, assess and confirm a
-                        candidate’s suitability for employment and choose
-                        between candidates. Stracon AB will process your
+                        <br />
+                        <br />
+                        2. How we gather your personal information Information
+                        you give to us. Most of the information Stracon AB
+                        collects about you is received directly from you, for
+                        example from your application and during interviews. You
+                        can always choose not to provide us certain information.
+                        However, not providing requested personal data may
+                        affect or prevent us from evaluating your application or
+                        consider you as a candidate. Information we collect
+                        about you. Stracon AB may also collect personal data
+                        about you from third parties, such as professional
+                        recruiting firms, your references and prior employers.
+                        Sometimes we may also obtain personal data from publicly
+                        available sources, such as your profile on LinkedIn,
+                        Facebook and other publicly available information.
+                        <br />
+                        <br />
+                        3. How your information will be used Stracon AB will
+                        process your personal data in a conventional and regular
+                        recruitment manner. For example, we may need to process
+                        your data to enter into a contract with you regarding
+                        the employment. This also includes taking steps prior to
+                        entering into a contract with you. Stracon AB also have
+                        a legitimate interest in processing your personal data
+                        during the recruitment process and for keeping records
+                        of the process. Processing data from job applicants
+                        allows us to manage the recruitment process, assess and
+                        confirm a candidate’s suitability for employment and
+                        choose between candidates. Stracon AB will process your
                         personal data for the following purposes: To manage all
                         aspects of the recruitment process. Your personal data
                         will be used to manage your job application, to assess
@@ -286,44 +282,43 @@ function Career() {
                         become part of your employment record and will be used
                         for employment purposes, in accordance with our employee
                         privacy policy.
-                        <br/> 
-                        <br/>
-                        4. How we share your information Stracon
-                        AB may share your personal information with our
-                        employees and other trusted parties, to the extent
-                        required to manage the recruitment process: Our
-                        employees. Your information will be shared internally
-                        for the purposes of the recruitment process, and to
-                        manage our daily business operations. However, we will
-                        restrict access to those of our employees who need it to
-                        perform their jobs, such as individuals performing
-                        administrative functions, HR and any other members of
-                        staff involved in the recruitment process. Service
-                        providers. We may transfer or share your personal data
-                        with suppliers and subcontractors that supply services
-                        to us which require the processing of your personal
-                        data. For example, third party service providers may
-                        provide us with recruiting software systems or assist us
-                        in the recruiting process, including interviewing,
-                        administering tests and evaluating candidates. We may
-                        also engage legal and other professional advisers.
-                        Please note that our suppliers and subcontractors are
-                        not authorized to use or disclose your personal data
-                        except as necessary to perform services on our behalf,
-                        or to comply with legal requirements. Legal purposes.
-                        Sometimes legal purposes may require us to share
-                        information about you, for example if required by law,
-                        legal process or to respond to lawful requests from law
-                        enforcement agencies, regulatory agencies, and other
-                        public and government authorities. Other parties. We may
-                        also share your personal information where you ask or
-                        permit us to. For example, we may share necessary
-                        information about you with the references you have
-                        provided, to make any necessary reference checks.
-                        <br/> 
-                        <br/>
-                        5.
-                        Where we process your personal data Stracon AB always
+                        <br />
+                        <br />
+                        4. How we share your information Stracon AB may share
+                        your personal information with our employees and other
+                        trusted parties, to the extent required to manage the
+                        recruitment process: Our employees. Your information
+                        will be shared internally for the purposes of the
+                        recruitment process, and to manage our daily business
+                        operations. However, we will restrict access to those of
+                        our employees who need it to perform their jobs, such as
+                        individuals performing administrative functions, HR and
+                        any other members of staff involved in the recruitment
+                        process. Service providers. We may transfer or share
+                        your personal data with suppliers and subcontractors
+                        that supply services to us which require the processing
+                        of your personal data. For example, third party service
+                        providers may provide us with recruiting software
+                        systems or assist us in the recruiting process,
+                        including interviewing, administering tests and
+                        evaluating candidates. We may also engage legal and
+                        other professional advisers. Please note that our
+                        suppliers and subcontractors are not authorized to use
+                        or disclose your personal data except as necessary to
+                        perform services on our behalf, or to comply with legal
+                        requirements. Legal purposes. Sometimes legal purposes
+                        may require us to share information about you, for
+                        example if required by law, legal process or to respond
+                        to lawful requests from law enforcement agencies,
+                        regulatory agencies, and other public and government
+                        authorities. Other parties. We may also share your
+                        personal information where you ask or permit us to. For
+                        example, we may share necessary information about you
+                        with the references you have provided, to make any
+                        necessary reference checks.
+                        <br />
+                        <br />
+                        5. Where we process your personal data Stracon AB always
                         strives to process and store your data within the
                         EU/EEA. However, your data may in certain situations be
                         transferred to, and stored at, a destination outside of
@@ -335,21 +330,20 @@ function Career() {
                         example, EU standard Model Clauses and Privacy Shield)
                         are in place to protect your personal information and to
                         make sure it is treated securely.
-                        <br/> 
-                        <br/>
-                        6. How long we keep
-                        your personal data Stracon AB keeps your personal data
-                        only as long as necessary for the recruitment process.
-                        However, we may keep your personal data up to two years
-                        after the position has been filled. The reason for this
-                        it that we may need to show that the hiring process was
-                        non-discriminatory. We may also keep and use your
-                        personal data for a limited period of time to consider
-                        you for potential future roles. If you are not
-                        interested in any other positions than the one you are
-                        applying for, please reach out to us and let us know you
-                        wish to be excluded. Your application will be saved for
-                        this purpose as long as you are considered an
+                        <br />
+                        <br />
+                        6. How long we keep your personal data Stracon AB keeps
+                        your personal data only as long as necessary for the
+                        recruitment process. However, we may keep your personal
+                        data up to two years after the position has been filled.
+                        The reason for this it that we may need to show that the
+                        hiring process was non-discriminatory. We may also keep
+                        and use your personal data for a limited period of time
+                        to consider you for potential future roles. If you are
+                        not interested in any other positions than the one you
+                        are applying for, please reach out to us and let us know
+                        you wish to be excluded. Your application will be saved
+                        for this purpose as long as you are considered an
                         interesting candidate, but no longer than two years.
                         However, we may contact you to ask if you want to review
                         and update your application to continue to be included
@@ -358,57 +352,56 @@ function Career() {
                         collected will become part of your employment record and
                         will be used for employment purposes, in accordance with
                         our employee privacy policy.
-                        <br/> 
-                        <br/>
-                        7. Your rights Right to
-                        object. You have right to object to processing based on
-                        legitimate interest. This means we may no longer process
-                        the personal data unless we can demonstrate compelling
-                        legitimate grounds for the processing which override
-                        your interests. You can always contact us for more
-                        information on the balance test that has been made.
-                        Right to access and transfer your data. You have the
-                        right to request a transcript of personal data processed
-                        by us, and additional information on how the data have
-                        been collected, processed, shared, etc. The first
-                        transcript may be requested free of charge. You may also
-                        be entitled to transfer your personal data to another
-                        controller. Right to rectification. You have the right
-                        to correct inaccurate or incomplete information about
-                        yourself. Right to erasure. You have the right to
-                        request that we delete personal data about you, for
-                        example if the data is no longer necessary in relation
-                        to the purposes for which it was collected or otherwise
-                        processed, or if there is no legal basis for processing
-                        the data. Right to restriction. You are entitled to
-                        request that the processing of your personal data should
-                        be limited until inaccurate or incomplete information
-                        about you has been corrected, or until an objection from
-                        you has been handled. Right to withdraw your consent.
-                        You may at any time withdraw any consent you have given
-                        us. However, please note that it will not affect any
-                        processing that has already taken place. Please note
-                        that legal rights or obligations (such as privacy and
-                        confidentiality legislation) may prevent us from
-                        disclosing or transfer all or part of your information,
-                        or from immediately deleting your information.
-                        <br/> 
-                        <br/>
-                        8. How to
-                        contact us Stracon AB is the responsible entity
-                        (controller) for the processing of your personal data as
-                        described above. We are subject to Swedish data
+                        <br />
+                        <br />
+                        7. Your rights Right to object. You have right to object
+                        to processing based on legitimate interest. This means
+                        we may no longer process the personal data unless we can
+                        demonstrate compelling legitimate grounds for the
+                        processing which override your interests. You can always
+                        contact us for more information on the balance test that
+                        has been made. Right to access and transfer your data.
+                        You have the right to request a transcript of personal
+                        data processed by us, and additional information on how
+                        the data have been collected, processed, shared, etc.
+                        The first transcript may be requested free of charge.
+                        You may also be entitled to transfer your personal data
+                        to another controller. Right to rectification. You have
+                        the right to correct inaccurate or incomplete
+                        information about yourself. Right to erasure. You have
+                        the right to request that we delete personal data about
+                        you, for example if the data is no longer necessary in
+                        relation to the purposes for which it was collected or
+                        otherwise processed, or if there is no legal basis for
+                        processing the data. Right to restriction. You are
+                        entitled to request that the processing of your personal
+                        data should be limited until inaccurate or incomplete
+                        information about you has been corrected, or until an
+                        objection from you has been handled. Right to withdraw
+                        your consent. You may at any time withdraw any consent
+                        you have given us. However, please note that it will not
+                        affect any processing that has already taken place.
+                        Please note that legal rights or obligations (such as
+                        privacy and confidentiality legislation) may prevent us
+                        from disclosing or transfer all or part of your
+                        information, or from immediately deleting your
+                        information.
+                        <br />
+                        <br />
+                        8. How to contact us Stracon AB is the responsible
+                        entity (controller) for the processing of your personal
+                        data as described above. We are subject to Swedish data
                         protection legislation, including the General Data
                         Protection Regulation (GDPR). If you have any questions
                         or comments on this privacy policy or about our use of
                         your personal data, please contact us at
                         info@Stracon.se.
-                        <br/> 
-                        <br/>
-                        9. Complaints You have the right to
-                        lodge a complaint to the Swedish Supervisory Authority,
-                        if you believe that we have not complied with our
-                        obligations regarding your personal data.
+                        <br />
+                        <br />
+                        9. Complaints You have the right to lodge a complaint to
+                        the Swedish Supervisory Authority, if you believe that
+                        we have not complied with our obligations regarding your
+                        personal data.
                       </div>
                       <div className="modal-footer">
                         <button

@@ -2,7 +2,8 @@ import React from "react";
 import Kranmarkt from "../../img/samarbeten/Kranmarkt.png";
 import BRG from "../../img/samarbeten/business-region-goteborg-logo-vector.png";
 import KompetensPlus from "../../img/samarbeten/kompetens+.JPG";
-import NordicWellness from "../../img/kunder/Nordic Wellness_logo_NO_SYMBOL_White.png"
+import NordicWellness from "../../img/kunder/Nordic Wellness_logo_NO_SYMBOL_White.png";
+import NordicWellnessSmall from "../../img/kunder/Nordic Wellness_logo_2rader_white.png";
 
 function Footer() {
   return (
@@ -30,7 +31,10 @@ function Footer() {
         <h6 className="text-center pb-2">Några av våra kunder</h6>
         <div className="row">
           <div className="col text-center my-auto">
-            <img src={NordicWellness} alt="Kranmärkt" className="" />
+            <img src={NordicWellness} alt="Kranmärkt" className="d-none d-sm-block" />
+          </div>
+          <div className="col text-center my-auto">
+            <img src={NordicWellnessSmall} alt="Kranmärkt" className="d-block d-sm-none nwSmall" />
           </div>
           <div className="col text-center">
             <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />

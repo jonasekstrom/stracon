@@ -97,8 +97,9 @@ position: relative;
   height: 100px;
   width: 100px;
 }
-.nw {
-  
+.nwSmall {
+  height: 100px;
+  width: 200px;
 }
 .partners {
   min-height: 3rem;

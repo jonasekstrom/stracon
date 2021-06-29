@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
+import Leadership from "../../img/bakgrunder/leadership.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 const placeholderText = [
   "Projektledning",
+  "Rådgivning",
+  "Bemanning",
   "Ledarskap",
   "Utbildning",
-  "Marknadsaktivitet",
   "Intrim Uppdrag",
+  "Styrelsesupport"
 ];
 
 function Assignments() {
@@ -45,92 +49,51 @@ function Assignments() {
       </div>
 
       <div className="container pt-5">
-{/*         <section className="row row-cols-1 row-cols-md-3 g-4 margin50 justify-content-center mb-5">
-          <div className="col" data-aos="fade-right">
-            <div className="card bg-dark text-white">
-              <img
-                src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                className="card-img"
-                alt="harbor"
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Projektledning</h5>
-                <p className="card-text">
-                  Genomförande av sälj/marknads projekt
-                </p>
-                <p className="card-text">Offert</p>
-              </div>
-            </div>
-          </div>
-          <div className="col" data-aos="fade-right">
-            <div className="card bg-dark text-white">
-              <img
-                src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                className="card-img"
-                alt="leadership"
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Ledarskap</h5>
-                <p className="card-text">
-                  leda, motivera, coacha avdelningar eller arbetsgrupper
-                </p>
-                <p className="card-text">Offert</p>
-              </div>
-            </div>
-          </div>
-          <div className="col" data-aos="fade-right">
-            <div className="card bg-dark text-white">
-              <img
-                src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                className="card-img"
-                alt="Education"
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Utbildning </h5>
-                <p className="card-text">
-                  Utbilda dina försäljare, tekniker, montörer i relations
-                  försäljning
-                </p>
-                <p className="card-text">Offert</p>
-              </div>
-            </div>
-          </div>
-          <div className="col" data-aos="fade-right">
-            <div className="card bg-dark text-white">
-              <img
-                src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                className="card-img"
-                alt="Marketactivity"
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Marknadsaktivitet </h5>
-                <p className="card-text">
-                  Genomförande av marknads aktiviteter, utskick,
-                  marknadsanalyser
-                </p>
-                <p className="card-text">Offert</p>
-              </div>
-            </div>
-          </div>
-          <div className="col" data-aos="fade-right">
-            <div className="card bg-dark text-white">
-              <img
-                src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                className="card-img"
-                alt="Intimate assignment"
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Interim uppdrag </h5>
-                <p className="card-text">
-                  snabb tillsättning, vikariat, deltid
-                </p>
-                <p className="card-text">Offert</p>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section className="mt-5">
           <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div className="col" data-aos="fade-right">
+              <div class="card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <h5 className="card-title text-center pt-2">Rådgivning </h5>
+                <div class="card-body">
+                  <p class="card-text text-center text-md-left">
+                  Management rådgivning, uppbyggnad av marknadsplattform
+                  </p>
+
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
+                  </HashLink>
+                </div>
+              </div>
+            </div>
+            <div className="col" data-aos="fade-right">
+              <div class="card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <h5 className="card-title text-center pt-2">Bemanning </h5>
+                <div class="card-body">
+                  <p class="card-text text-center text-md-left">
+                  Matchande av kompetenser för akuta behov
+                  </p>
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
+                  </HashLink>
+                </div>
+              </div>
+            </div>
             <div className="col" data-aos="fade-right">
               <div class="card h-100">
                 <img
@@ -143,30 +106,35 @@ function Assignments() {
                   <p class="card-text text-center text-md-left">
                   Genomförande av sälj/marknads projekt
                   </p>
-                  
-                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
-                  Få Offert
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
                   </HashLink>
-
                 </div>
               </div>
             </div>
             <div className="col" data-aos="fade-right">
               <div class="card h-100">
                 <img
-                  src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  src={Leadership}
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 className="card-title text-center pt-2">Ledarskap </h5>
+                <h5 className="card-title text-center pt-2">
+                Ledarskap
+                </h5>
                 <div class="card-body">
                   <p class="card-text text-center text-md-left">
-                  Leda, motivera, coacha avdelningar eller arbetsgrupper
+                  Leda, motivera, coacha individer eller arbetsgrupper
                   </p>
-                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
-                  Få Offert
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
                   </HashLink>
-
                 </div>
               </div>
             </div>
@@ -177,15 +145,17 @@ function Assignments() {
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 className="card-title text-center pt-2">Utbildning </h5>
+                <h5 className="card-title text-center pt-2">Utbildning</h5>
                 <div class="card-body">
                   <p class="card-text text-center text-md-left">
-                  Utbilda dina försäljare, tekniker, montörer i relations försäljning
+                  Utbilda säljare, tekniker, eller montörer i försäljningsteknik
                   </p>
-                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
-                  Få Offert
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
                   </HashLink>
-
                 </div>
               </div>
             </div>
@@ -196,17 +166,18 @@ function Assignments() {
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 className="card-title text-center pt-2">Marknadsaktivitet </h5>
+                <h5 className="card-title text-center pt-2">Interim uppdrag </h5>
                 <div class="card-body">
                   <p class="card-text text-center text-md-left">
-                  Genomförande av marknads aktiviteter, utskick, marknadsanalyser
-
-
+                  Snabb tillsättning av VD, säljchef på vikariat, deltid, heltid
                   </p>
-                  <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
-                  Få Offert
-                  </HashLink>
 
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
+                  </HashLink>
                 </div>
               </div>
             </div>
@@ -217,17 +188,18 @@ function Assignments() {
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 className="card-title text-center pt-2">Interim uppdrag
- </h5>
+                <h5 className="card-title text-center pt-2">Styrelsesupport </h5>
                 <div class="card-body">
                   <p class="card-text text-center text-md-left">
-                  Snabb tillsättning, vikariat, deltid
+                  Support och expertis i marknadsfrågor
+                  </p>
 
-</p>
-                             <HashLink to="/kontakta-oss#formular" className="btn btn-warning float-end">
-                  Få Offert
+                  <HashLink
+                    to="/kontakta-oss#formular"
+                    className="btn btn-warning float-end"
+                  >
+                    Få Offert
                   </HashLink>
-
                 </div>
               </div>
             </div>

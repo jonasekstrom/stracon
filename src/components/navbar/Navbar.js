@@ -62,19 +62,24 @@ function Navbar() {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
-                  <HashLink to="/om-oss#affarside" className="dropdown-item">
-                    Vår Affärsidé
+                             <li>
+                  <HashLink to="/om-oss#historik" className="dropdown-item">
+                    Historik
                   </HashLink>
                 </li>
                 <li>
-                  <HashLink to="/om-oss#vision" className="dropdown-item">
-                    Vår Vision
+                  <HashLink to="/om-oss#affarside" className="dropdown-item">
+                    Affärsidé
+                  </HashLink>
+                </li>
+                <li>
+                  <HashLink to="/om-oss#kvalitet" className="dropdown-item">
+                    Kvalitet
                   </HashLink>
                   </li>
                 <li>
-                  <HashLink to="/om-oss#vardeord" className="dropdown-item">
-                    Våra Värdeord
+                  <HashLink to="/om-oss#vardegrund" className="dropdown-item">
+                    Värdegrunder
                   </HashLink>
                 </li>
                 <li>
