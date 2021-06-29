@@ -61,7 +61,7 @@ function Contact() {
            <div className="col text-center my-auto">
             
             <a
-              href="mailto:info@stracon.com"
+              href="mailto:info@stracon.se"
               className=" text-decoration-none text-reset"
             >
               <i className="far fa-envelope fa-4x d-block"> </i>
@@ -71,10 +71,10 @@ function Contact() {
           </div>
           <div className="col text-center">
             <a
-              href="tel:+46(0)70562354"
+              href="tel:+46(0)709-666464"
               className=" text-decoration-none text-reset"
             >
-              <i className="fas fa-phone-square fa-4x d-block"></i>+46(0)70562354
+              <i className="fas fa-phone-square fa-4x d-block"></i>+46(0)709-666464
             </a>
           </div>
         </div>
@@ -85,7 +85,7 @@ function Contact() {
         >
           <div className="col text-center">
             {" "}
-            <i className="fab fa-linkedin-in fa-4x me-4"></i>
+            <a href="https://www.linkedin.com/company/74692120" className="text-reset text-decoration-none"><i className="fab fa-linkedin-in fa-4x me-4"></i></a>
           </div>
           <div className="col text-center">
             <i className="fab fa-facebook-square fa-4x me-4"></i>

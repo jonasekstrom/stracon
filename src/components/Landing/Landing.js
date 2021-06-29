@@ -11,21 +11,18 @@ function Landing() {
 
   return (
     <div>
-            <div className="hero">
-        <img
-          src={Hunken}
-          alt="Eriksberg"
-        />
+      <div className="hero">
+        <img src={Hunken} alt="Eriksberg" />
         <div class="centered text-white text-center">
-        <h2>Stracon</h2>
-        <h6>Pålitlighet, Engagemang, Kundfokus</h6></div>
+          <h3>Pålitlighet, Engagemang, Kundfokus</h3>
+        </div>
       </div>
 
       <div className="container p-5">
         <div>
-          <h2 className="text-center border-bottom border-primary">
+          <h1 className="text-center border-bottom border-primary">
             Välkommen till Stracon
-          </h2>
+          </h1>
           <p className="mt-3 text-center">
             Stracon bidrar till att göra tillvaron lite bättre för
             företagsledningar med hjälp av utbildning, ledarskap och
@@ -34,108 +31,44 @@ function Landing() {
             skillnad i sina organisationer och resultat.
           </p>
         </div>
-        {/* <div
-          className="row row-cols-3 align-items-stretch py-5"
-          data-aos="fade-right"
-        >
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80')",
-              }}
-            >
-              {" "}
-              <div className="card-img-overlay">
-                <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h2 className="pt-5 mt-5 mb-4 lh-1 fw-bold">Utbildning</h2>
-                  <ul className="d-flex list-unstyled mt-auto justify-content-end">
-                    <li className="d-flex align-items-center ">
-                      <a href="/#" className="btn btn-warning">
-                        Go somewhere
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80')",
-              }}
-            >
-              <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 lh-1 fw-bold">Ledarskap </h2>
-                <ul className="d-flex list-unstyled mt-auto justify-content-end">
-                  <li className="d-flex align-items-center ">
-                    <a href="/#" className="btn btn-warning">
-                      Go somewhere
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80')",
-              }}
-            >
-              <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 lh-1 fw-bold">Kommunikation</h2>
-                <ul className="d-flex list-unstyled mt-auto justify-content-end">
-                  <li className="d-flex align-items-center ">
-                    <a href="/#" className="btn btn-warning">
-                      Go somewhere
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>*/}
-      </div> 
-      <section id="services" className="py-5 my-5 text-white">
+      </div>
+      <section id="services" className="py-5 my-5 bg-secondary text-white">
         <div className="container">
-          <div className="row text-center text-white">
+          <div className="row text-center text-white servicesIndex">
             <div className="col-md-4">
               <i className="fas fa-comment fa-4x mr-4"></i>
               <hr />
-              <h3>Utbildning</h3>
+              <h3>Bemanning och rådgivningstjänster</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt, debitis nam! Repudiandae, provident iste consequatur
-                hic dignissimos ratione ea quae.
+                Behöver ditt företag hjälp med att stärka upp säljavdelningen,
+                driva ett marknadsprojekt? Skulle ni dra stor nytta av att
+                coacha, motivera eller utbilda personalen? Behöver dina säljare
+                ny energi och nya verktyg eller dina tekniker kunskap för att
+                lyckas med merförsäljning hos kund? Stämmer något av frågorna in
+                på dig och ditt behov, kontakta oss för en kostnadsfri
+                konsultation och låt oss berätta vad vi kan göra för dig.
               </p>
             </div>
             <div className="col-md-4">
-              <i className="fas fa-home fa-4x mr-4"></i>
+              <i className="fas fa-chart-line fa-4x mr-4"></i>
               <hr />
               <h3>Ledarskap</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt, debitis nam! Repudiandae, provident iste consequatur
-                hic dignissimos ratione ea quae.
+                Vi har en samlad gedigen erfarenhet av att leda individer och
+                grupper mot ett givet mål, vi kan hjälpa dig att genomföra
+                marknads aktiviteter och mäta utfallet tillsammans med
+                företagets personal eller ensamma.
               </p>
             </div>
             <div className="col-md-4">
-              <i className="fas fa-suitcase fa-4x mr-4"></i>
+              <i className="fas fa-user-graduate fa-4x mr-4"></i>
               <hr />
-              <h3>Kommunikation</h3>
+              <h3>Utbildning</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt, debitis nam! Repudiandae, provident iste consequatur
-                hic dignissimos ratione ea quae.
+                Vi kan erbjuda utbildning på plats hos er, vi kan också anordna
+                säljutbildningar med helpension i vackra lokaler med utsikt över
+                havet i Sisjön. Vi kan också erbjuda individuell coachning med
+                personligt upplägg och plan.
               </p>
             </div>
           </div>

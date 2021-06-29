@@ -155,6 +155,11 @@ position: relative;
   width: 100%;
   background: rgba(70, 99, 91, 0.4);
 }
+
+.servicesIndex {
+  z-index: 999;
+  color: white;
+}
 .anchor {
   position: absolute;
   transform: translateY(-50vh);
