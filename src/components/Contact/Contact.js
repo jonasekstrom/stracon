@@ -103,7 +103,7 @@ function Contact() {
         <h5 className="mb-5">Vill du få en offert eller veta mer om våra tjänster? Använd kontaktformuläret nedan, så svarar vi dig så snart vi kan. 
 
 </h5>
-          <form onSubmit={(e) => onSubmit(e)}>
+          <form onSubmit={(e) => onSubmit(e)} className="bg-light p-5 rounded shadow-lg">
             <div className="form-group">
               <label htmlFor="name">Namn:</label>
               <input

@@ -11,7 +11,7 @@ const placeholderText = [
   "Bemanning",
   "Ledarskap",
   "Utbildning",
-  "Intrim Uppdrag",
+  "Interim Uppdrag",
   "Styrelsesupport"
 ];
 

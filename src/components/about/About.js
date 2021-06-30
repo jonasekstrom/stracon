@@ -16,8 +16,11 @@ function About() {
           <img
             src="https://images.unsplash.com/photo-1513108500008-edfde4c0f59c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
             alt="Eriksberg"
+            
           />
+          <div className="overlay"></div>
           <div class="centered text-white">Om Oss</div>
+          
         </div>
       </div>
       <section className="text-center margin50">
@@ -49,6 +52,8 @@ function About() {
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
               alt=""
+              className="cardsImg"
+
             />
           </section>
         </div>
@@ -61,6 +66,7 @@ function About() {
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
               alt=""
+              className="cardsImg"
             />
             <div>
               <h2>Affärsidé</h2>
@@ -95,6 +101,8 @@ function About() {
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
               alt=""
+              className="cardsImg"
+
             />
           </section>
         </div>

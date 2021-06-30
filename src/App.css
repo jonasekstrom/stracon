@@ -19,7 +19,6 @@
   top: 0;
   left: 0;
   background: rgba(24, 28, 48, 0.7);
-  z-index: 10;
 }
 .jumbotron-image {
   background-position: center center;
@@ -63,7 +62,7 @@
   margin-bottom: 2rem;
 }
 
-.cards h3 {
+.cards h2 {
   margin-bottom: 2rem;
 }
 
@@ -92,6 +91,9 @@
 }
 .minHeight {
 position: relative;
+}
+.kompetensplus {
+  color: #3b5676;
 }
 .kranmarkt {
   height: 100px;

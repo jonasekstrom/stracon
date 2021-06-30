@@ -117,7 +117,7 @@ function Career() {
             </div>
             <div class="mt-3">
               <label for="formFile" class="form-label">
-                Personligt brev:
+                Övriga dokument:
               </label>
               <input class="form-control" type="file" id="formFile" />
             </div>
@@ -126,6 +126,13 @@ function Career() {
                 Foto:
               </label>
               <input class="form-control" type="file" id="formFile" />
+            </div>
+            <div class="mt-3">
+              <label for="personligtbrev" class="form-label">
+                Personligt Brev:
+              </label>
+              <textarea class="form-control" id="personligtbrev" rows="4"></textarea>
+
             </div>
 
             <div className="form-check mt-2">
