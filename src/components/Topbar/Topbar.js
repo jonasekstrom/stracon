@@ -25,16 +25,18 @@ function Topbar() {
           </div>
           <div class="col-md-4">
             <div class="social text-right">
-              <a href="#" className="text-reset">
+              <a href="#" className="link-unstyled">
                 <i class="fab fa-facebook fa-2x me-2"></i>
               </a>
               <a
                 href="https://www.linkedin.com/company/74692120"
-                className="text-reset"
+                target="_blank"
+                rel="noreferrer"
+                className="link-unstyled"
               >
                 <i class="fab fa-linkedin fa-2x me-2"></i>
               </a>
-              <a href="#" className="text-reset">
+              <a href="#" className="link-unstyled">
                 <i class="fab fa-instagram fa-2x"></i>
               </a>
             </div>

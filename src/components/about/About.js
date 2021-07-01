@@ -16,16 +16,13 @@ function About() {
           <img
             src="https://images.unsplash.com/photo-1513108500008-edfde4c0f59c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
             alt="Eriksberg"
-            
           />
           <div className="overlay"></div>
           <div class="centered text-white">Om Oss</div>
-          
         </div>
       </div>
       <section className="text-center margin50">
         <div className="container">
-        
           <span class="anchor" id="historik"></span>
 
           <section class="cards shadow" data-aos="fade-right">
@@ -51,9 +48,8 @@ function About() {
             </div>
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
-              alt=""
+              alt="History"
               className="cardsImg"
-
             />
           </section>
         </div>
@@ -65,7 +61,7 @@ function About() {
           <section class="cards shadow" data-aos="fade-right">
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
-              alt=""
+              alt="Business Model"
               className="cardsImg"
             />
             <div>
@@ -100,9 +96,8 @@ function About() {
             </div>
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
-              alt=""
+              alt="Quality"
               className="cardsImg"
-
             />
           </section>
         </div>
@@ -115,10 +110,10 @@ function About() {
             className="col-6 rounded-circle bg-light p-5 shadow"
             data-aos="fade-right"
           >
-            <h4>Kundfokus</h4>Kundfokus innebär att göra kundens röst hörd,
-            lyssna aktivt och ställa rätt frågor, detta för att förstå kundens
-            verkliga behov och därför alltid leverera rätt kompetens eller
-            tjänst.
+            <h4>Kundfokus</h4>innebär att göra kundens röst hörd, lyssna aktivt
+            och ställa rätt frågor, detta för att förstå kundens önskan, behov
+            och värderingar. Med denna information kan vi alltid leverera rätt
+            erbjudande av kompetens eller tjänst till kunden.
           </div>
         </div>
         <div className="row justify-content-between mt-3 d-none d-md-flex">
@@ -126,7 +121,7 @@ function About() {
             className="col-6 rounded-circle bg-light p-5 shadow "
             data-aos="fade-right"
           >
-            <h4>Pålitlighet</h4> Pålitlighet grundar sig i att vår
+            <h4>Pålitlighet</h4> Pålitlighet grundar sig i att vår
             personal är ärlig och noga med att passa tider. Ger en bra service
             och en hög kvalité på arbete som utförs mot både interna och externa
             beställare.
@@ -140,9 +135,27 @@ function About() {
             högre än själva insatsen.
           </div>
         </div>
+        <div className="row justify-content-between mt-3 d-none d-md-flex">
+          <div
+            className="col-6 rounded-circle bg-light p-5 shadow "
+            data-aos="fade-right"
+          >
+            <h4>Fördomsfria</h4> Fördomsfria grundar sig i att alla
+            rekryteringar ska ske objektivt och fördomsfritt och med vetskapen
+            att mångfald berikar.
+          </div>
+          <div
+            className="col-6 rounded-circle bg-light p-5 shadow"
+            data-aos="fade-right"
+          >
+            <h4>Samhällsnytta</h4>Samhällsnytta innebär att vi ska verka för att
+            säkra arbetstillfälle genom våra uppdrag samt att delta i projekt
+            som främjar unga och nystartade företag i regionen.
+          </div>
+        </div>
 
         <div className="row justify-content-center mt-5 d-block d-md-none">
-          <div className="col bg-light shadow" data-aos="fade-right">
+          <div className="col bg-light shadow py-3" data-aos="fade-right">
             <h4>Kundfokus</h4>Kundfokus innebär att göra kundens röst hörd,
             lyssna aktivt och ställa rätt frågor, detta för att förstå kundens
             verkliga behov och därför alltid leverera rätt kompetens eller
@@ -150,16 +163,28 @@ function About() {
           </div>
         </div>
         <div className="row justify-content-between mt-3 d-block d-md-none">
-          <div className="col bg-light mt-3 shadow" data-aos="fade-right">
+          <div className="col bg-light mt-3 shadow py-3" data-aos="fade-right">
             <h4>Pålitlighet</h4> Pålitlighet grundar sig i att vår
             personal är ärlig och noga med att passa tider. Ger en bra service
             och en hög kvalité på arbete som utförs mot både interna och externa
             beställare.
           </div>
-          <div className="col bg-light mt-3 shadow" data-aos="fade-right">
+          <div className="col bg-light mt-3 shadow py-3" data-aos="fade-right">
             <h4>Engagemang</h4>Engagemang innebär att varje individ brinner för
             den egna leveransen, att ta ansvar för att bidra och skapa ett värde
             högre än själva insatsen.
+          </div>
+        </div>
+        <div className="row justify-content-between mt-3 d-block d-md-none">
+          <div className="col bg-light mt-3 shadow py-3" data-aos="fade-right">
+            <h4>Fördomsfria</h4> Fördomsfria grundar sig i att alla
+            rekryteringar ska ske objektivt och fördomsfritt och med vetskapen
+            att mångfald berikar.
+          </div>
+          <div className="col bg-light mt-3 shadow py-3" data-aos="fade-right">
+            <h4>Samhällsnytta</h4>Samhällsnytta innebär att vi ska verka för att
+            säkra arbetstillfälle genom våra uppdrag samt att delta i projekt
+            som främjar unga och nystartade företag i regionen.
           </div>
         </div>
       </section>
@@ -182,21 +207,21 @@ function About() {
               </p>
               <hr />
               <p>
-              <a
-              href="tel:+46(0)709-666464"
-              className=" text-decoration-none text-reset"
-            >
-              <i className="fas fa-phone-square me-1"></i>+46(0)709-666464
-            </a>
+                <a
+                  href="tel:+46(0)709-666464"
+                  className=" text-decoration-none text-reset"
+                >
+                  <i className="fas fa-phone-square me-1"></i>+46(0)709-666464
+                </a>
               </p>
               <p>
-              <a
-              href="mailto:info@stracon.se"
-              className=" text-decoration-none text-reset"
-            >
-              <i className="far fa-envelope fa me-1"> </i>
-              info@stracon.se
-            </a>
+                <a
+                  href="mailto:info@stracon.se"
+                  className=" text-decoration-none text-reset"
+                >
+                  <i className="far fa-envelope fa me-1"> </i>
+                  info@stracon.se
+                </a>
               </p>
             </div>
           </div>

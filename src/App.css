@@ -1,3 +1,15 @@
+/* Social Media */
+.link-unstyled, .link-unstyled:link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.link-unstyled:hover {
+  color: rgba(7, 26, 134);
+}
+.socialMedia {
+  color: black !important;
+  text-decoration: none;
+}
 .hero {
   height: 70vh;
   position: relative;
@@ -99,10 +111,7 @@ position: relative;
   height: 100px;
   width: 100px;
 }
-.nwSmall {
-  height: 100px;
-  width: 200px;
-}
+
 .partners {
   min-height: 3rem;
 }

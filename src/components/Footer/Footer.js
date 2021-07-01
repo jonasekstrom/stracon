@@ -1,4 +1,7 @@
 import React from "react";
+
+import Privacy from "../common/Privacy";
+
 import Kranmarkt from "../../img/samarbeten/Kranmarkt.png";
 
 import BRG from "../../img/samarbeten/business-region-goteborg.png";
@@ -21,13 +24,13 @@ function Footer() {
         <h3 className="text-center pb-2 ">I samarbete med</h3>
         <div className="row justify-content-center">
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
-            <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />
+          <a href="https://kranmarkt.se/" target="_blank" rel="noreferrer"><img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={BRG} alt="Kranmärkt" className="img-fluid" />
+          <a href="https://www.businessregiongoteborg.se/" target="_blank" rel="noreferrer"><img src={BRG} alt="Business Region Göteborg" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-          <h1 className="kompetensplus">Kompetens+</h1>
+          <a href="https://www.businessregiongoteborg.se/foretagande/kompetensforsorjning/kompetens" rel="noreferrer" className="text-decoration-none"><h1 className="kompetensplus">Kompetens+</h1></a>
           </div>
   
         </div>
@@ -36,23 +39,23 @@ function Footer() {
         <h3 className="text-center pb-2 ">Några av våra kunder</h3>
         <div className="row justify-content-center">
   
-          <div className="col-7 text-center mt-4 my-sm-auto ">
-            <img src={NordicWellnessSmall} alt="Kranmärkt" className="img-fluid" />
+          <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+          <a href="https://nordicwellness.se/" target="_blank" rel="noreferrer"><img src={NordicWellnessSmall} alt="Nordic Wellness" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={SweaGroup} alt="Kranmärkt" className="img-fluid" />
+          <a href="http://sweagroup.se/" target="_blank" rel="noreferrer"><img src={SweaGroup} alt="Swea Group" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={WorldClass} alt="Kranmärkt" className="img-fluid" />
+          <a href="https://worldclasstrelleborg.se/" target="_blank" rel="noreferrer"><img src={WorldClass} alt="World Class Trelleborg" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={Presto} alt="Kranmärkt" className="img-fluid" />
+          <a href="https://www.prestomarine.com/" target="_blank" rel="noreferrer"><img src={Presto} alt="Presto Marine" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={Campreq} alt="Kranmärkt" className="img-fluid" />
+          <a href="https://campreq.se/" target="_blank" rel="noreferrer"><img src={Campreq} alt="Campreq" className="img-fluid" /></a>
           </div>
           <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-            <img src={Steeltech} alt="Kranmärkt" className="img-fluid" />
+            <a href="https://www.steeltech.se" target="_blank" rel="noreferrer"><img src={Steeltech} alt="Steeltech" className="img-fluid" /></a>
           </div>
         </div>
       </section>
@@ -60,7 +63,49 @@ function Footer() {
       <div className="row justify-content-center mt-4">
         <div className="col text-center align-self-center">
           <span>Copyright &copy; {new Date().getFullYear()} Stracon </span>
-          <span>Policy</span>
+          <a
+                    href="/#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    className="text-decoration-none text-reset ms-1"
+                  >
+                    Policy
+                  </a>
+                  <div
+                  className="modal fade"
+                  id="exampleModal"
+                  tabIndex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog modal-dialog-scrollable">
+                    <div className="modal-content">
+                      <div className="modal-header text-center">
+                        <h5 className="modal-title" id="exampleModalLabel">
+                          Privacy policy
+                        </h5>
+                        <button
+                          type="button"
+                          className="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        <Privacy/>
+                      </div>
+                      <div className="modal-footer">
+                        <button
+                          type="button"
+                          className="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Stäng
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
       </div>
     </div>
