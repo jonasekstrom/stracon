@@ -16,35 +16,15 @@ function Career() {
     human: false,
   });
 
-  const { name, email, message } = formData;
+  // const { name, email, message } = formData;
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const templateId = "template_3sfpcdg";
+  };
 
-    sendFeedback(templateId, {
-      message: message,
-      name: name,
-      email: email,
-    });
-  };
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send("service_3lfm6ha", templateId, variables)
-      .then((res) => {
-        console.log("Email successfully sent!");
-      })
-      // Handle errors here however you like, or use a React error boundary
-      .catch((err) =>
-        console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
-          err
-        )
-      );
-  };
   const generateArrayOfYears = () => {
     let max = new Date().getFullYear();
     max = max - 17;
@@ -68,7 +48,7 @@ function Career() {
           alt="Eriksberg"
         />
         <div className="overlay"></div>
-        <div class="centered text-white">Söker du nya utmaningar?</div>
+        <div className="centered text-white">Söker du nya utmaningar?</div>
       </div>
       <div className="container">
         <h1 className="text-center my-5">Spontanansökan</h1>
@@ -108,34 +88,34 @@ function Career() {
               <label for="selectBirthyear" className="form-label">
                 Födelseår:
               </label>
-              <select class="form-select form-select" id="selectBirthyear">
+              <select className="form-select form-select" id="selectBirthyear">
                 <option selected>Födelseår</option>
                 {generateArrayOfYears()}
               </select>
             </div>
-            <div class="mt-3">
-              <label for="formFile" class="form-label">
+            <div className="mt-3">
+              <label for="formFile" className="form-label">
                 CV:
               </label>
-              <input class="form-control" type="file" id="formFile" />
+              <input className="form-control" type="file" id="formFile" />
             </div>
-            <div class="mt-3">
-              <label for="formFile" class="form-label">
+            <div className="mt-3">
+              <label for="formFile" className="form-label">
                 Övriga dokument:
               </label>
-              <input class="form-control" type="file" id="formFile" />
+              <input className="form-control" type="file" id="formFile" />
             </div>
-            <div class="mt-3">
-              <label for="formFile" class="form-label">
+            <div className="mt-3">
+              <label for="formFile" className="form-label">
                 Foto:
               </label>
-              <input class="form-control" type="file" id="formFile" />
+              <input className="form-control" type="file" id="formFile" />
             </div>
-            <div class="mt-3">
-              <label for="personligtbrev" class="form-label">
+            <div className="mt-3">
+              <label for="personligtbrev" className="form-label">
                 Personligt Brev:
               </label>
-              <textarea class="form-control" id="personligtbrev" rows="4"></textarea>
+              <textarea className="form-control" id="personligtbrev" rows="4"></textarea>
 
             </div>
 

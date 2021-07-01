@@ -16,35 +16,15 @@ function Contact() {
     human: false
   });
 
-  const { name, email, message } = formData;
+  // const { name, email, message } = formData;
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const templateId = "template_3sfpcdg";
+  };
 
-    sendFeedback(templateId, {
-      message: message,
-      name: name,
-      email: email,
-    });
-  };
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send("service_3lfm6ha", templateId, variables)
-      .then((res) => {
-        console.log("Email successfully sent!");
-      })
-      // Handle errors here however you like, or use a React error boundary
-      .catch((err) =>
-        console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
-          err
-        )
-      );
-  };
   return (
     <div>
       <div className="hero">
@@ -53,7 +33,7 @@ function Contact() {
           alt="Eriksberg"
         />
         <div className="overlay"></div>
-        <div class="centered text-white">Kontakta Oss</div>
+        <div className="centered text-white">Kontakta Oss</div>
       </div>
       <div className="container">
         
@@ -101,7 +81,7 @@ function Contact() {
         </div> 
         <div className="container">
  
-        <span class="anchor" id="formular"></span>
+        <span className="anchor" id="formular"></span>
 
         <div className="mx-auto col col-md-8 margin50">
         <h5 className="mb-5">Vill du få en offert eller veta mer om våra tjänster? Använd kontaktformuläret nedan, så svarar vi dig så snart vi kan. 

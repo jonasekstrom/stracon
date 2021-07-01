@@ -14,7 +14,7 @@ function Landing() {
       <div className="hero">
         <img src={Hunken} alt="Eriksberg" />
         <div className="overlay"></div>
-        <div class="centered text-white text-center">
+        <div className="centered text-white text-center">
           <h3>Pålitlighet, Engagemang, Kundfokus</h3>
         </div>
       </div>

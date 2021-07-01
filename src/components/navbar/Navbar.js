@@ -46,7 +46,7 @@ function Navbar() {
                 KARRIÄR
               </Link>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <Link
                 to="/om-oss"
                 className="nav-link dropdown-toggle"

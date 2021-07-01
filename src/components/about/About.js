@@ -18,14 +18,14 @@ function About() {
             alt="Eriksberg"
           />
           <div className="overlay"></div>
-          <div class="centered text-white">Om Oss</div>
+          <div className="centered text-white">Om Oss</div>
         </div>
       </div>
       <section className="text-center margin50">
         <div className="container">
-          <span class="anchor" id="historik"></span>
+          <span className="anchor" id="historik"></span>
 
-          <section class="cards shadow" data-aos="fade-right">
+          <section className="cards shadow" data-aos="fade-right">
             <div>
               <h2>Historik</h2>
               <p>
@@ -56,9 +56,9 @@ function About() {
       </section>
       <section className="text-center margin50">
         <div className="container">
-          <span class="anchor" id="affarside"></span>
+          <span className="anchor" id="affarside"></span>
 
-          <section class="cards shadow" data-aos="fade-right">
+          <section className="cards shadow" data-aos="fade-right">
             <img
               src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=924&q=80"
               alt="Business Model"
@@ -79,11 +79,11 @@ function About() {
           </section>
         </div>
       </section>
-      <span class="anchor" id="kvalitet"></span>
+      <span className="anchor" id="kvalitet"></span>
 
       <section className="margin50 text-center">
         <div className="container">
-          <section class="cards shadow" data-aos="fade-right">
+          <section className="cards shadow" data-aos="fade-right">
             <div>
               <h2>Kvalitét</h2>
               <p>
@@ -102,7 +102,7 @@ function About() {
           </section>
         </div>
       </section>
-      <span class="anchor" id="vardegrund"></span>
+      <span className="anchor" id="vardegrund"></span>
       <section className="container margin50 text-center">
         <h3>Värdegrunder</h3>
         <div className="row justify-content-center mt-5 d-none d-md-flex">
@@ -188,22 +188,22 @@ function About() {
           </div>
         </div>
       </section>
-      <span class="anchor" id="teamet"></span>
+      <span className="anchor" id="teamet"></span>
 
-      <section id="team" class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-5">Vårt Team</h2>
-          <div class="row text-center justify-content-center">
-            <div class="col-md-6" data-aos="fade-right">
+      <section id="team" className="py-5">
+        <div className="container">
+          <h2 className="text-center mb-5">Vårt Team</h2>
+          <div className="row text-center justify-content-center">
+            <div className="col-md-6" data-aos="fade-right">
               <img
                 src={Patrik}
                 alt=""
-                class="rounded-circle mb-3"
+                className="rounded-circle mb-3"
                 style={{ width: "200px", height: "200px", objectFit: "cover" }}
               />
               <h4>Patrik Strandberg</h4>
-              <p class="text-success">
-                <i class="fas fa-award text-success mb-3"></i> VD
+              <p className="text-success">
+                <i className="fas fa-award text-success mb-3"></i> VD
               </p>
               <hr />
               <p>
