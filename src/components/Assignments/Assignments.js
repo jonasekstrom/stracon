@@ -52,7 +52,7 @@ function Assignments() {
         <section className="mt-5">
           <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <div className="col" data-aos="fade-right">
-              <div class="card h-100">
+              <div className="card h-100">
                 <img
                   src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                   className="card-img-top"

@@ -85,34 +85,34 @@ function Career() {
               />
             </div>
             <div className="mt-3">
-              <label for="selectBirthyear" className="form-label">
+              <label htmlFor="selectBirthyear" className="form-label">
                 Födelseår:
               </label>
               <select className="form-select form-select" id="selectBirthyear">
-                <option selected>Födelseår</option>
+                <option defaultValue>Födelseår</option>
                 {generateArrayOfYears()}
               </select>
             </div>
             <div className="mt-3">
-              <label for="formFile" className="form-label">
+              <label htmlFor="formFile" className="form-label">
                 CV:
               </label>
               <input className="form-control" type="file" id="formFile" />
             </div>
             <div className="mt-3">
-              <label for="formFile" className="form-label">
+              <label htmlFor="formFile" className="form-label">
                 Övriga dokument:
               </label>
               <input className="form-control" type="file" id="formFile" />
             </div>
             <div className="mt-3">
-              <label for="formFile" className="form-label">
+              <label htmlFor="formFile" className="form-label">
                 Foto:
               </label>
               <input className="form-control" type="file" id="formFile" />
             </div>
             <div className="mt-3">
-              <label for="personligtbrev" className="form-label">
+              <label htmlFor="personligtbrev" className="form-label">
                 Personligt Brev:
               </label>
               <textarea className="form-control" id="personligtbrev" rows="4"></textarea>

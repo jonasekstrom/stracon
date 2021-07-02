@@ -6,10 +6,7 @@
 .link-unstyled:hover {
   color: rgba(7, 26, 134);
 }
-.socialMedia {
-  color: black !important;
-  text-decoration: none;
-}
+
 .hero {
   height: 70vh;
   position: relative;
@@ -32,36 +29,13 @@
   left: 0;
   background: rgba(24, 28, 48, 0.7);
 }
-.jumbotron-image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.carousel .carousel-item {
-  height: 90vh;
-}
-
-.carousel-item img {
-    position: absolute;
-    object-fit:cover;
-    top: 0;
-    left: 0;
-    min-height: 90vh;
-}
 
 .App {
   text-align: center;
 }
 
 /* Cards */
-.cardGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  background: #f1f1f1;
-  margin-bottom: 2rem;
-}
+
 .cardsImg {
   width: 100%;
 }
@@ -88,12 +62,7 @@
 .card-img-overlay {
   background: rgba(7, 26, 134, 0.7)
 }
-.card-overlay {
-  background: rgba(7, 26, 134, 0.7)
-}
-/* .cards:nth-child(even) img {
-  order: 2;
-} */
+
 /* Footer */
 .footer {
   color: #ffff;
@@ -112,12 +81,7 @@ position: relative;
   width: 100px;
 }
 
-.partners {
-  min-height: 3rem;
-}
-.costumers {
-  min-height: 3rem;
-}
+
 .copyright {
   min-height: 3rem;
 }
@@ -131,17 +95,6 @@ position: relative;
   margin-top: 50%;
 }
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .centered {
   font-size: 42px;
   font-weight: bold;
