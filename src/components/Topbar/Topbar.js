@@ -37,7 +37,10 @@ function Topbar() {
                 <i className="fab fa-linkedin fa-2x me-2"></i>
               </a>
               <a href="#" className="link-unstyled">
-                <i className="fab fa-instagram fa-2x"></i>
+                <i className="fab fa-instagram fa-2x me-2"></i>
+              </a>
+              <a href="#" className="link-unstyled">
+                <i className="fab fa-youtube fa-2x"></i>
               </a>
             </div>
           </div>

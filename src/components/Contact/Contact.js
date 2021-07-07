@@ -1,35 +1,67 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import Aos from "aos";
 
 import Privacy from "../common/Privacy";
+import ContactUs from "../../img/bakgrunder/kontaktaoss.jpg";
 
 import "aos/dist/aos.css";
 
 function Contact() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  const [sent, setSent] = useState(false);
+  const [human, setHuman] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
-    human: false
+    message: ""
   });
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+
+  useEffect(() => {
+    console.log(sent)
+  }, [sent]);
 
   // const { name, email, message } = formData;
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-
+  const humanCheck = (e) => {
+    setHuman(human => !human)
+  }
   const onSubmit = (e) => {
     e.preventDefault();
-  };
 
+    if(human){
+      
+      try {
+       axios.post("http://localhost:4000/send_mail",{
+         text: formData.message,
+         email: formData.email,
+         name: formData.name
+
+       })
+       .then(data =>{
+         console.log(data);
+        setSent(true);
+        setFormData({name: "",email:"",message:"" });
+       })
+
+     } catch(err) {
+       setSent(false)
+     }
+    }
+
+
+  };
+  console.log(formData);
   return (
     <div>
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1614326014420-1f0c741ca7e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+          src={ContactUs}
           alt="Eriksberg"
         />
         <div className="overlay"></div>
@@ -105,6 +137,7 @@ function Contact() {
                 className="form-control"
                 name="email"
                 placeholder=""
+                onChange={(e) => onChange(e)}
               />
             </div>
             <div className="form-group mt-2">
@@ -113,10 +146,11 @@ function Contact() {
                 className="form-control"
                 name="message"
                 rows="6"
+                onChange={(e) => onChange(e)}
               ></textarea>
             </div>
             <div className="form-check mt-2">
-              <input type="checkbox" className="form-check-input" id="policy" />
+              <input type="checkbox" className="form-check-input" id="policy" onChange={(e) => humanCheck(e)}/>
               <label className="form-check-label" htmlFor="policy">
                 <p>
                   Jag har läst och accepterar Stracons
@@ -167,9 +201,11 @@ function Contact() {
                 </div>
               </label>
             </div>
-            <button type="submit" className="btn btn-outline-success mt-2 disabled">
+            {!human ? <button type="submit" className="btn btn-outline-success mt-2 disabled">
               Skicka
-            </button>
+            </button> : <button type="submit" className="btn btn-outline-success mt-2">
+              Skicka
+            </button>}{!sent ? (<div></div>) : (<div>Din förfrågan är skickad</div>)}
           </form>
         </div>
         </div>

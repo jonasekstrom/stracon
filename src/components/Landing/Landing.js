@@ -36,21 +36,7 @@ function Landing() {
       <section id="services" className="py-5 my-5 bg-secondary text-white">
         <div className="container">
           <div className="row text-center text-white servicesIndex">
-            <div className="col-md-4">
-              <i className="fas fa-comment fa-4x mr-4"></i>
-              <hr />
-              <h3>Bemanning och rådgivningstjänster</h3>
-              <p>
-                Behöver ditt företag hjälp med att stärka upp säljavdelningen,
-                driva ett marknadsprojekt? Skulle ni dra stor nytta av att
-                coacha, motivera eller utbilda personalen? Behöver dina säljare
-                ny energi och nya verktyg eller dina tekniker kunskap för att
-                lyckas med merförsäljning hos kund? Stämmer något av frågorna in
-                på dig och ditt behov, kontakta oss för en kostnadsfri
-                konsultation och låt oss berätta vad vi kan göra för dig.
-              </p>
-            </div>
-            <div className="col-md-4">
+          <div className="col-md-4">
               <i className="fas fa-chart-line fa-4x mr-4"></i>
               <hr />
               <h3>Ledarskap</h3>
@@ -61,6 +47,20 @@ function Landing() {
                 företagets personal eller ensamma.
               </p>
             </div>
+            <div className="col-md-4">
+              <i className="fas fa-comment fa-4x mr-4"></i>
+              <hr />
+              <h3>Bemanning och rådgivning</h3>
+              <p>
+                Vi kan snabbt och tryggt bemanna akuta eller strategiska behov
+                hos dig som kund. Vare sig det gäller ett vikariat, få timmar i
+                veckan eller full tid under en längre period. Några uppdrag som kan
+                hanteras är försäljare, försäljningschef, projektledare, VD
+                och styrelserådgivare. De kandidater som erbjuds från oss har
+                genomgått en kvalitéts säkrande process.
+              </p>
+            </div>
+ 
             <div className="col-md-4">
               <i className="fas fa-user-graduate fa-4x mr-4"></i>
               <hr />

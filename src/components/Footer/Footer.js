@@ -134,7 +134,7 @@ function Footer() {
               aria-hidden="true"
             >
               <div className="modal-dialog modal-dialog-scrollable">
-                <div className="modal-content">
+                <div className="modal-content text-dark">
                   <div className="modal-header text-center">
                     <h5 className="modal-title" id="exampleModalLabel">
                       Privacy policy

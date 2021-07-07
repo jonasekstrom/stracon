@@ -1,3 +1,43 @@
+/* CTA */
+.cta {
+	color:rgba(7, 26, 134, 0.95) !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid rgba(7, 26, 134, 0.95) !important;
+  border-radius: 30px;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+
+}
+.cta:hover {
+	color: #ffffff !important;
+	background:rgba(7, 26, 134, 0.95);
+	border-color: rgba(7, 26, 134, 0.95) !important;
+	transition: all 0.4s ease 0s;
+}
+.cta span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.cta span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+.cta:hover span {
+  padding-right: 25px;
+}
+.cta:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /* Social Media */
 .link-unstyled, .link-unstyled:link {
   color: inherit;
@@ -11,9 +51,7 @@
   height: 70vh;
   position: relative;
   width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1568199665145-ffa8e6f520da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1338&q=80");
-  background-size: cover;
-  background-position: 80%, 50%;
+
 }
 .hero img {
   height: 70vh;
@@ -56,9 +94,7 @@
   height: 400px;
 }
 
-.cards > div {
-  padding: 2rem;
-}
+
 .card-img-overlay {
   background: rgba(7, 26, 134, 0.7)
 }
@@ -96,7 +132,7 @@ position: relative;
 }
 
 .centered {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
   position: absolute;
   top: 50%;

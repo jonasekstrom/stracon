@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Aos from "aos";
 
 import Privacy from "../common/Privacy";
@@ -13,16 +14,42 @@ function Career() {
     name: "",
     email: "",
     message: "",
+    birthYear: "",
+    cv: null,
+    other: "",
+    photo: "",
+    text: "",
     human: false,
   });
+  const [human, setHuman] = useState(false)
 
   // const { name, email, message } = formData;
 
-  const onChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const onChange = (e) => {
+    console.log(formData);
 
+    setFormData({ ...formData, [e.target.name]: e.target.value })};
+    const humanCheck = (e) => {
+      setHuman(human => !human)
+    }
+  const setSelectedFile = (e) =>{
+    console.log(formData);
+setFormData({...formData, [e.target.name]: e.target.value})
+  }
   const onSubmit = (e) => {
     e.preventDefault();
+    if(human){
+      
+      try {
+       axios.post("http://localhost:4000/send_career",formData)
+       .then(data =>{
+         console.log(data);
+        setFormData({name: "",email:"",message:"" });
+       })
+
+     } catch(err) {
+     }
+    }
   };
 
   const generateArrayOfYears = () => {
@@ -39,6 +66,7 @@ function Career() {
         {year}
       </option>
     ));
+    
   };
   return (
     <div>
@@ -82,13 +110,15 @@ function Career() {
                 className="form-control"
                 name="email"
                 placeholder=""
+                onChange={(e) => onChange(e)}
               />
             </div>
             <div className="mt-3">
-              <label htmlFor="selectBirthyear" className="form-label">
+              <label htmlFor="selectBirthyear" className="form-label"
+>
                 Födelseår:
               </label>
-              <select className="form-select form-select" id="selectBirthyear">
+              <select className="form-select form-select" id="selectBirthyear" name="birthYear" onChange={(e) => onChange(e)}>
                 <option defaultValue>Födelseår</option>
                 {generateArrayOfYears()}
               </select>
@@ -97,7 +127,7 @@ function Career() {
               <label htmlFor="formFile" className="form-label">
                 CV:
               </label>
-              <input className="form-control" type="file" id="formFile" />
+              <input className="form-control" type="file" id="formFile" name="cv" onChange={(e) => setSelectedFile(e.target.files[0])} />
             </div>
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
@@ -112,15 +142,16 @@ function Career() {
               <input className="form-control" type="file" id="formFile" />
             </div>
             <div className="mt-3">
-              <label htmlFor="personligtbrev" className="form-label">
-                Personligt Brev:
+              <label htmlFor="personligtbrev" className="form-label" >
+              Beskriv kortfattat varför du är intresserad av att jobba hos Stracon.
               </label>
-              <textarea className="form-control" id="personligtbrev" rows="4"></textarea>
+              <textarea className="form-control" id="personligtbrev" rows="4" name="text" onChange={(e) => onChange(e)}
+></textarea>
 
             </div>
 
             <div className="form-check mt-2">
-              <input type="checkbox" className="form-check-input" id="policy" />
+              <input type="checkbox" className="form-check-input" id="policy" onChange={(e) => humanCheck(e)}/>
               <label className="form-check-label" htmlFor="policy">
                 <p>
                   Jag har läst och accepterar Stracons
@@ -171,9 +202,11 @@ function Career() {
                 </div>
               </label>
             </div>
-            <button type="submit" className="btn btn-outline-success mt-2 disabled">
+            {!human ? <button type="submit" className="btn btn-outline-success mt-2 disabled">
               Skicka
-            </button>
+            </button> : <button type="submit" className="btn btn-outline-success mt-2">
+              Skicka
+            </button>}
           </form>
         </div>
       </div>
