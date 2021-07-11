@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Aos from "aos";
-
+import Kran from "../../img/bakgrunder/photo-1614326014420-1f0c741ca7e1.jpg";
 import Privacy from "../common/Privacy";
 
 import "aos/dist/aos.css";
@@ -10,45 +10,93 @@ function Career() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  const [file, setFile] = useState("");
+  const [photo, setPhoto] = useState({});
+  const [otherDocuments, setOtherDocuments] = useState("");
+  const [formStatus, setFormStatus] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
     birthYear: "",
-    cv: null,
+    cv: "",
+    cvFileName: "",
     other: "",
     photo: "",
     text: "",
     human: false,
   });
-  const [human, setHuman] = useState(false)
-
+  const [human, setHuman] = useState(false);
+  const [errros, setErrors] = useState([]);
   // const { name, email, message } = formData;
 
   const onChange = (e) => {
     console.log(formData);
 
-    setFormData({ ...formData, [e.target.name]: e.target.value })};
-    const humanCheck = (e) => {
-      setHuman(human => !human)
-    }
-  const setSelectedFile = (e) =>{
-    console.log(formData);
-setFormData({...formData, [e.target.name]: e.target.value})
-  }
-  const onSubmit = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const humanCheck = (e) => {
+    setHuman((human) => !human);
+    console.log(human);
+  };
+  const setSelectedFile = (e) => {
+    setFile(e.target.files[0]);
+  };
+  const setOtherFiles = (e) => {
+    setOtherDocuments(e.target.files);
+  };
+  const setPhotograph = (e) => {
+    setPhoto(e.target.files[0]);
+  };
+ 
+  const onSubmit = async (e) => {
     e.preventDefault();
-    if(human){
-      
-      try {
-       axios.post("http://localhost:4000/send_career",formData)
-       .then(data =>{
-         console.log(data);
-        setFormData({name: "",email:"",message:"" });
-       })
 
-     } catch(err) {
-     }
+    const newData = new FormData();
+    newData.append("file", file);
+    newData.append("name", formData.name);
+    newData.append("email", formData.email);
+    newData.append("message", formData.message);
+    newData.append("birthyear", formData.birthYear);
+    newData.append("photo", photo);
+    for (var i = 0; i < otherDocuments.length; i++) {
+      newData.append(otherDocuments[i].name, otherDocuments[i]);
+    }
+
+    if (human) {
+      try {
+        const res = await axios.post(
+          "http://localhost:4000/send_career",
+          newData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+
+        let {message} = res.data;
+        if(message === "complete"){
+          setFormStatus(true)
+          setTimeout(function(){
+            setFormStatus(false)
+          },5000)
+          setFormData({name: "",
+          email: "",
+          message: "",
+          birthYear: "",
+          cv: "",
+          cvFileName: "",
+          other: "",
+          photo: "",
+          text: "",
+          human: false,})
+          setHuman()
+          setFile("")
+          setPhoto({})
+          setOtherDocuments("")
+        }
+      } catch (err) {}
     }
   };
 
@@ -57,22 +105,21 @@ setFormData({...formData, [e.target.name]: e.target.value})
     max = max - 17;
     let min = max - 60;
     let years = [];
-
     for (let i = max; i >= min; i--) {
       years.push(i);
     }
+
     return years.map((year, index) => (
       <option key={index} value={year}>
         {year}
       </option>
     ));
-    
   };
   return (
     <div>
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1614326014420-1f0c741ca7e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+          src={Kran}
           alt="Eriksberg"
         />
         <div className="overlay"></div>
@@ -84,74 +131,109 @@ setFormData({...formData, [e.target.name]: e.target.value})
           Om du är intresserad av ett uppdrag hos Stracon är du välkommen att
           skicka in ditt CV och personliga brev här. Vi ser över
           spontanansökningar som kommit in med jämna mellanrum, vi kontaktar dig
-          för en profileringsintervju och informationsmöte. <br/> <br/>Därefter får du
-          besked om du läggs in i vårt konsultarkiv och kvalificeras till en
-          djupintervju. <br/> <br/>När ett uppdrag kommer in som matchar din profil så
-          kommer vi att höra av oss för ett eventuellt inledande möte med
-          kunden.
+          för en profileringsintervju och informationsmöte. <br /> <br />
+          Därefter får du besked om du läggs in i vårt konsultarkiv och
+          kvalificeras till en djupintervju. <br /> <br />
+          När ett uppdrag kommer in som matchar din profil så kommer vi att höra
+          av oss för ett eventuellt inledande möte med kunden.
         </div>
-
+        
         <div className="mx-auto col col-md-8 mt-5 bg-light p-5 rounded shadow-lg">
-          <form onSubmit={(e) => onSubmit(e)}>
+        {!formStatus ? (<form onSubmit={(e) => onSubmit(e)}>
             <div className="form-group">
-              <label htmlFor="name">Namn:</label>
+              <label htmlFor="name">Namn:*</label>
               <input
                 type="text"
                 className="form-control border-left-0"
                 name="name"
                 placeholder=""
                 onChange={(e) => onChange(e)}
+                required
               />
             </div>
             <div className="form-group mt-2">
-              <label htmlFor="email">Epost:</label>
+              <label htmlFor="email">Epost:*</label>
               <input
                 type="email"
                 className="form-control"
                 name="email"
                 placeholder=""
                 onChange={(e) => onChange(e)}
+                required
               />
             </div>
             <div className="mt-3">
-              <label htmlFor="selectBirthyear" className="form-label"
->
+              <label htmlFor="selectBirthyear" className="form-label">
                 Födelseår:
               </label>
-              <select className="form-select form-select" id="selectBirthyear" name="birthYear" onChange={(e) => onChange(e)}>
+              <select
+                className="form-select form-select"
+                id="selectBirthyear"
+                name="birthYear"
+                onChange={(e) => onChange(e)}
+              >
                 <option defaultValue>Födelseår</option>
                 {generateArrayOfYears()}
               </select>
             </div>
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
-                CV:
+                CV:*
               </label>
-              <input className="form-control" type="file" id="formFile" name="cv" onChange={(e) => setSelectedFile(e.target.files[0])} />
+              <input
+                className="form-control"
+                type="file"
+                id="formFile"
+                onChange={setSelectedFile}
+                required
+              />
             </div>
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
                 Övriga dokument:
               </label>
-              <input className="form-control" type="file" id="formFile" />
+              <input
+                className="form-control"
+                type="file"
+                id="formFile"
+                multiple="multiple"
+                onChange={setOtherFiles}
+              />
             </div>
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
                 Foto:
               </label>
-              <input className="form-control" type="file" id="formFile" />
+              <input
+                className="form-control"
+                type="file"
+                id="formFile"
+                name="photo"
+                onChange={setPhotograph}
+              />
             </div>
             <div className="mt-3">
-              <label htmlFor="personligtbrev" className="form-label" >
-              Beskriv kortfattat varför du är intresserad av att jobba hos Stracon.
+              <label htmlFor="personligtbrev" className="form-label">
+                Beskriv kortfattat varför du är intresserad av att jobba hos
+                Stracon.*
               </label>
-              <textarea className="form-control" id="personligtbrev" rows="4" name="text" onChange={(e) => onChange(e)}
-></textarea>
-
+              <textarea
+                className="form-control"
+                id="personligtbrev"
+                rows="4"
+                name="message"
+                onChange={(e) => onChange(e)}
+                required
+              ></textarea>
             </div>
 
             <div className="form-check mt-2">
-              <input type="checkbox" className="form-check-input" id="policy" onChange={(e) => humanCheck(e)}/>
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="policy"
+                onChange={(e) => humanCheck(e)}
+              />
               <label className="form-check-label" htmlFor="policy">
                 <p>
                   Jag har läst och accepterar Stracons
@@ -186,7 +268,7 @@ setFormData({...formData, [e.target.name]: e.target.value})
                         ></button>
                       </div>
                       <div className="modal-body">
-                        <Privacy/>
+                        <Privacy />
                       </div>
                       <div className="modal-footer">
                         <button
@@ -202,12 +284,20 @@ setFormData({...formData, [e.target.name]: e.target.value})
                 </div>
               </label>
             </div>
-            {!human ? <button type="submit" className="btn btn-outline-success mt-2 disabled">
-              Skicka
-            </button> : <button type="submit" className="btn btn-outline-success mt-2">
-              Skicka
-            </button>}
-          </form>
+            {!human ? (
+              <button
+                type="submit"
+                className="btn btn-outline-success mt-2 disabled"
+              >
+                Skicka
+              </button>
+            ) : (
+              <button type="submit" className="btn btn-outline-success mt-2">
+                Skicka
+              </button>
+            )}
+          </form>) : (<div>Tack för din ansökan</div>)}
+          
         </div>
       </div>
     </div>

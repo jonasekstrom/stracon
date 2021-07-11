@@ -25,6 +25,17 @@ function Footer() {
       <div className="footer container-fluid">
         <section className="container  ">
           <h3 className="text-center pb-2 ">I samarbete med</h3>
+{/*           <div class="gridCorp">
+  <div><img src={Kranmarkt} alt="" className="kranmarkt"/></div>
+  <div><img src={BRG} alt="" /></div>
+  <div>              <a
+                href="https://www.businessregiongoteborg.se/foretagande/kompetensforsorjning/kompetens"
+                rel="noreferrer"
+                className="text-decoration-none"
+              >
+                <h1 className="kompetensplus">Kompetens+</h1>
+              </a></div>
+</div> */}
           <div className="row justify-content-center">
             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
               <a href="https://kranmarkt.se/" target="_blank" rel="noreferrer">
@@ -57,6 +68,15 @@ function Footer() {
         </section>
         <section className="container mt-4 ">
           <h3 className="text-center pb-2 ">Några av våra kunder</h3>
+  {/*         <div class="gridCorp">
+  <div><img src={NordicWellnessSmall} alt=""/></div>
+  <div><img src={SweaGroup} alt="" className="swea"/></div>
+  <div><img src={WorldClass} alt="" /></div>
+  <div><img src={Presto} alt="" /></div>
+  <div><img src={Campreq} alt="" /></div>
+  <div><img src={Steeltech} alt="" /></div>
+
+</div> */}
           <div className="row justify-content-center">
             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
               <a

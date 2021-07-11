@@ -113,11 +113,27 @@ position: relative;
   color: #3b5676;
 }
 .kranmarkt {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  max-width: 80px;
+}
+.gridCorp {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+.gridCorp > div {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
 }
 
-
+.gridCorp > div img {
+  width: 100%;
+  grid-area: 1/1/2/2;
+}
+.swea{
+padding: 50px;
+}
 .copyright {
   min-height: 3rem;
 }
@@ -191,9 +207,39 @@ border: 1px solid teal;
 border-radius: 100%;
   -webkit-transition: all 1s;
 }
-
+@media only screen and (max-width: 1000px) {
+  .swea{
+    padding: 70px;
+  }
+}
 @media only screen and (max-width: 789px) {
   .cards {
     display: block;
+  }
+  .gridCorp > div img {
+    grid-area: 1/1/2/2;
+  }
+  .swea{
+    padding: 50px;
+    }
+}
+@media only screen and (max-width: 580px) {
+
+  .gridCorp > div img {
+    width: 50%;
+    grid-area: 1/1/2/2;
+  }
+  .gridCorp {
+    grid-gap: 0rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+
+  .gridCorp > div img {
+    width: 80%;
+    grid-area: 1/1/2/2;
+  }
+  .gridCorp {
+    grid-gap: 0rem;
   }
 }
