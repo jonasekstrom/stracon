@@ -24,10 +24,9 @@ function Career() {
     other: "",
     photo: "",
     text: "",
-    human: false,
   });
   const [human, setHuman] = useState(false);
-  const [errros, setErrors] = useState([]);
+  // const [errros, setErrors] = useState([]);
   // const { name, email, message } = formData;
 
   const onChange = (e) => {
@@ -89,8 +88,7 @@ function Career() {
           cvFileName: "",
           other: "",
           photo: "",
-          text: "",
-          human: false,})
+          text: "",})
           setHuman()
           setFile("")
           setPhoto({})
@@ -296,7 +294,7 @@ function Career() {
                 Skicka
               </button>
             )}
-          </form>) : (<div>Tack för din ansökan</div>)}
+          </form>) : (<div className="thankyou"><span><h5>Tack för din ansökan!</h5><br/>Vi hör av oss inom kort</span></div>)}
           
         </div>
       </div>

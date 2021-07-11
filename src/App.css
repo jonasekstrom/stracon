@@ -67,7 +67,16 @@
   left: 0;
   background: rgba(24, 28, 48, 0.7);
 }
-
+.thankyou {
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+}
+.thankyou span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 .App {
   text-align: center;
 }

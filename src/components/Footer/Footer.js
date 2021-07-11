@@ -25,7 +25,7 @@ function Footer() {
       <div className="footer container-fluid">
         <section className="container  ">
           <h3 className="text-center pb-2 ">I samarbete med</h3>
-{/*           <div class="gridCorp">
+{/*           <div className="gridCorp">
   <div><img src={Kranmarkt} alt="" className="kranmarkt"/></div>
   <div><img src={BRG} alt="" /></div>
   <div>              <a
@@ -68,7 +68,7 @@ function Footer() {
         </section>
         <section className="container mt-4 ">
           <h3 className="text-center pb-2 ">Några av våra kunder</h3>
-  {/*         <div class="gridCorp">
+  {/*         <div className="gridCorp">
   <div><img src={NordicWellnessSmall} alt=""/></div>
   <div><img src={SweaGroup} alt="" className="swea"/></div>
   <div><img src={WorldClass} alt="" /></div>
