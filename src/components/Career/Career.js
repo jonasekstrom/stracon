@@ -30,13 +30,10 @@ function Career() {
   // const { name, email, message } = formData;
 
   const onChange = (e) => {
-    console.log(formData);
-
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const humanCheck = (e) => {
     setHuman((human) => !human);
-    console.log(human);
   };
   const setSelectedFile = (e) => {
     setFile(e.target.files[0]);
