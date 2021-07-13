@@ -62,7 +62,7 @@ function Career() {
     if (human) {
       try {
         const res = await axios.post(
-          "http://localhost:4000/send_career",
+          "http://172.104.229.75:4000/send_career",
           newData,
           {
             headers: {
