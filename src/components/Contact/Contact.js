@@ -36,7 +36,7 @@ function Contact() {
     if (human) {
       try {
        const res = await axios
-          .post("http://172.104.229.75/send_contact", newData)
+          .post("http://172.104.229.75:4000/send_contact", newData)
           let {message} = res.data;
           if(message === "complete"){
             setFormStatus(true)
