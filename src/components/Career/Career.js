@@ -62,10 +62,11 @@ function Career() {
     if (human) {
       try {
         const res = await axios.post(
-          "https://172.104.229.75/api/send_career",
+          "https://www.stracon.se/api/send_career",
           newData,
           {
             headers: {
+              "Access-Control-Allow-Origin": "*",
               "Content-Type": "multipart/form-data",
             },
           }
