@@ -31,9 +31,8 @@ function About() {
             <div className="my-auto px-3">
               <h2>Historik</h2>
               <p>
-                Stracon är ett nyetablerat företag, till en början ett en-mans
-                företag som hyr ut rådgivningstjänster med ambitionen att verka
-                tillsammans med och hjälpa industri företag i och runt Göteborgs
+                Stracon är ett nyetablerat företag, som erbjuder rådgivningstjänster med ambitionen att verka
+                tillsammans med och hjälpa industriföretag i och runt Göteborgs
                 med en tryggare och mer hållbar tillväxt. I förlängningen vill
                 företaget också erbjuda bemanningstjänster mot samma kund.
                 <br />
@@ -112,7 +111,7 @@ function About() {
             className="col-6 rounded-circle bg-light p-5 shadow"
             data-aos="fade-right"
           >
-            <h4>Kundfokus</h4>innebär att göra kundens röst hörd, lyssna aktivt
+            <h4>Kundfokus</h4>Kundfokus betyder för oss att göra kundens röst hörd, lyssna aktivt
             och ställa rätt frågor, detta för att förstå kundens önskan, behov
             och värderingar. Med denna information kan vi alltid leverera rätt
             erbjudande av kompetens eller tjänst till kunden.
@@ -132,7 +131,7 @@ function About() {
             className="col-6 rounded-circle bg-light p-5 shadow"
             data-aos="fade-right"
           >
-            <h4>Engagemang</h4>Engagemang innebär att varje individ brinner för
+            <h4>Engagemang</h4>Engagemang medför att varje individ hos oss brinner för
             den egna leveransen, att ta ansvar för att bidra och skapa ett värde
             högre än själva insatsen.
           </div>
@@ -142,7 +141,7 @@ function About() {
             className="col-6 rounded-circle bg-light p-5 shadow "
             data-aos="fade-right"
           >
-            <h4>Fördomsfrihet</h4> Fördomsfrihet grundar sig i att alla
+            <h4>Fördomsfrihet</h4> Fördomsfrihet är baserat på att alla våra
             rekryteringar ska ske objektivt och fördomsfritt och med vetskapen
             att mångfald berikar.
           </div>
@@ -197,10 +196,9 @@ function About() {
           <h2 className="text-center mb-5">Vårt Team</h2>
 
           <h5 className="text-center mb-5">
-            Vi jobbar kontinuerligt med att ta in nya konsulter som kan bidra
-            med kunskap och trygghet i tillväxten hos vår kund. För att veta vem
-            som passar dina behov bäst så kan du kontakta oss, så skickar vi
-            förslag på lämpliga och kvalitetssäkrade kandidater
+            Vi jobbar kontinuerligt med att ta in nya rådgivare som kan bidra
+            med kunskap och trygghet i tillväxten hos vår kund.<br/>För att veta vem
+            som passar dina behov bäst så kan du kontakta oss för ett möte där vi tillsammans hittar förslag på lämpliga och kvalitetssäkrade resurser
           </h5>
           <div className="row text-center justify-content-center">
             <div className="col-md-4" data-aos="fade-right">
@@ -216,7 +214,7 @@ function About() {
               </p>
               <hr />
               <span>
-                Erfaren affärscoach och ledarsexpert som är kompetent för att
+                Erfaren affärscoach och ledarsexpert som drivs av att
                 hjälpa andra att skapa enastående förändringar för jobb inom
                 näringslivet. Värdefull branscherfarenhet i kombination med
                 flera års tjänstgöring som säljare och ledare för branschfolk.
@@ -229,7 +227,7 @@ function About() {
               <h6>Kompetenser</h6>
               <p>
                 Relationsförsäljning | Affärsstrategier | Analytiskt tänkande |
-                Pedagogik | Förhandling Coachning | Motivering | Ledarskap |
+                Pedagogik | Förhandling | Coachning | Motivering | Ledarskap |
                 Strategi | Affärsutveckling | Måluppföljning
               </p>
               <hr />

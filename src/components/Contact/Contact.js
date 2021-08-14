@@ -76,7 +76,7 @@ function Contact() {
           <div className="col text-center">
             <a href="tel:+46(0)709-666464" className="link-unstyled">
               <i className="fas fa-phone-square fa-4x d-block"></i>
-              +46(0)709-666464
+              +46(0)709-66 64 64
             </a>
           </div>
         </div>
@@ -89,6 +89,8 @@ function Contact() {
             {" "}
             <a
               href="https://www.linkedin.com/company/74692120"
+              target="_blank"
+              rel="noreferrer"
               className="link-unstyled"
             >
               <i className="fab fa-linkedin fa-4x me-4"></i>
@@ -106,9 +108,9 @@ function Contact() {
           <span className="anchor" id="formular"></span>
 
           <div className="mx-auto col col-md-8 margin50">
-            <h5 className="mb-5">
+            <h5 className="mb-5 text-center">
               Vill du få en offert eller veta mer om våra tjänster? Använd
-              kontaktformuläret nedan, så svarar vi dig så snart vi kan.
+              kontaktformuläret nedan, så svarar vi dig så snart vi har möjlighet.
             </h5>
             {!formStatus ? (
               <form

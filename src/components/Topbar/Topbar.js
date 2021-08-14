@@ -11,7 +11,7 @@ function Topbar() {
               href="tel:+46(0)709-666464"
               className=" link-unstyled"
             >
-              <i className="fas fa-phone-square fa me-1"></i>+46(0)709-666464
+              <i className="fas fa-phone-square fa me-1"></i>+46(0)709-66 64 64
             </a>
           </div>
           <div className="col-md-5">

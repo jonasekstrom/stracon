@@ -56,8 +56,8 @@ function Landing() {
                 hos dig som kund. Vare sig det gäller ett vikariat, få timmar i
                 veckan eller full tid under en längre period. Några uppdrag som kan
                 hanteras är försäljare, försäljningschef, projektledare, VD
-                och styrelserådgivare. De kandidater som erbjuds från oss har
-                genomgått en kvalitéts säkrande process.
+                och styrelserådgivare. De rådgivare som erbjuds har
+                genomgått en kvalitétssäkrande process.
               </p>
             </div>
  
@@ -75,6 +75,36 @@ function Landing() {
           </div>
         </div>
       </section>
+      <div className="container p-5 ">
+        <div>
+          <h1 className="text-center  border-top border-primary">
+            Kunden beslutar, Stracon sköter resten
+          </h1>
+          <h1 className="text-center">
+            Kontakta oss redan idag!
+          </h1>
+          <div className="container">
+        <div
+          className="row justify-content-center mt-5"
+          data-aos="flip-up"
+          data-aos-once="true"
+        >
+          <div className="col-3 text-center my-auto">
+            <a href="mailto:info@stracon.se" className="link-unstyled">
+              <i className="far fa-envelope fa-4x d-block"> </i>
+              info@stracon.se
+            </a>
+          </div>
+          <div className="col-3 text-center">
+            <a href="tel:+46(0)709-666464" className="link-unstyled">
+              <i className="fas fa-phone-square fa-4x d-block"></i>
+              +46(0)709-66 64 64
+            </a>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
     </div>
   );
 }

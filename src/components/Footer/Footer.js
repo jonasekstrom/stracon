@@ -18,7 +18,7 @@ function Footer() {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#071a86"
-          fillOpacity="0.95"
+          fillOpacity="0.8"
           d="M0,128L720,160L1440,0L1440,320L720,320L0,320Z"
         ></path>
       </svg>

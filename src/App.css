@@ -112,14 +112,14 @@
 .footer {
   color: #ffff;
   min-height: 150px;
-  background-color: rgba(7, 26, 134, 0.95);
+  background-color: rgba(7, 26, 134, 0.8);
   
 }
 .minHeight {
 position: relative;
 }
 .kompetensplus {
-  color: #3b5676;
+  color:#fff;
 }
 .kranmarkt {
   height: 80px;
