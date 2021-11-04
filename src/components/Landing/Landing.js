@@ -89,13 +89,13 @@ function Landing() {
           data-aos="flip-up"
           data-aos-once="true"
         >
-          <div className="col-3 text-center my-auto">
+          <div className="col-12 col-md-3 text-center my-auto">
             <a href="mailto:info@stracon.se" className="link-unstyled">
               <i className="far fa-envelope fa-4x d-block"> </i>
               info@stracon.se
             </a>
           </div>
-          <div className="col-3 text-center">
+          <div className="col-12 col-md-3 text-center">
             <a href="tel:+46(0)709-666464" className="link-unstyled">
               <i className="fas fa-phone-square fa-4x d-block"></i>
               +46(0)709-66 64 64

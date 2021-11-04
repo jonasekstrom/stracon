@@ -101,7 +101,14 @@ function Contact() {
           </div>
           <div className="col text-center">
             {" "}
+            <a
+              href="https://www.instagram.com/stracon.se/"
+              target="_blank"
+              rel="noreferrer"
+              className="link-unstyled"
+            >
             <i className="fab fa-instagram-square fa-4x me-4"></i>
+            </a>
           </div>
         </div>
         <div className="container">

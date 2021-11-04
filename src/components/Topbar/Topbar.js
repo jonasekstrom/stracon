@@ -36,10 +36,10 @@ function Topbar() {
               >
                 <i className="fab fa-linkedin fa-2x me-2"></i>
               </a>
-              <a href="#" className="link-unstyled">
+              <a href="https://www.instagram.com/stracon.se/" className="link-unstyled" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram fa-2x me-2"></i>
               </a>
-              <a href="#" className="link-unstyled">
+              <a href="https://www.youtube.com/channel/UCh-X31OXE0_sFAWNu2M8DJg" className="link-unstyled" target="_blank" rel="noreferrer">
                 <i className="fab fa-youtube fa-2x"></i>
               </a>
             </div>
