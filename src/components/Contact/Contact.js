@@ -117,7 +117,7 @@ function Contact() {
           <div className="mx-auto col col-md-8 margin50">
             <h5 className="mb-5 text-center">
               Vill du få en offert eller veta mer om våra tjänster? Använd
-              kontaktformuläret nedan, så svarar vi dig så snart vi har möjlighet.
+              kontaktformuläret nedan, så kontaktar vi dig så snart vi har möjlighet.
             </h5>
             {!formStatus ? (
               <form
@@ -165,7 +165,7 @@ function Contact() {
                   />
                   <label className="form-check-label" htmlFor="policy">
                     <p>
-                      Jag har läst och accepterar Stracons
+                      Jag har läst och accepterar Stracon Groups
                       <a
                         href="/#"
                         data-bs-toggle="modal"

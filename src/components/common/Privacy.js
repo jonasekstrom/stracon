@@ -3,7 +3,7 @@ import React from 'react'
 function Privacy() {
     return (
         <>
-                        Stracon AB is committed to protecting and
+                        Stracon Group is committed to protecting and
                         respecting your privacy. This privacy policy describes
                         how we collect and use your personal data when you apply
                         for a job or get in touch with us regarding a job
@@ -65,13 +65,13 @@ function Privacy() {
                         <br/>
                         <b>2. How we gather your personal</b><br/>
                         information Information you give to us. Most of the
-                        information Stracon AB collects about you is received
+                        information Stracon Group collects about you is received
                         directly from you, for example from your application and
                         during interviews. You can always choose not to provide
                         us certain information. However, not providing requested
                         personal data may affect or prevent us from evaluating
                         your application or consider you as a candidate.
-                        Information we collect about you. Stracon AB may also
+                        Information we collect about you. Stracon Group may also
                         collect personal data about you from third parties, such
                         as professional recruiting firms, your references and
                         prior employers. Sometimes we may also obtain personal
@@ -81,18 +81,18 @@ function Privacy() {
                         <br/> 
                         <br/>
                         <b>3. How your information will be
-                        used</b> <br/> Stracon AB will process your personal data in a
+                        used</b> <br/> Stracon Group will process your personal data in a
                         conventional and regular recruitment manner. For
                         example, we may need to process your data to enter into
                         a contract with you regarding the employment. This also
                         includes taking steps prior to entering into a contract
-                        with you. Stracon AB also have a legitimate interest in
+                        with you. Stracon Group also have a legitimate interest in
                         processing your personal data during the recruitment
                         process and for keeping records of the process.
                         Processing data from job applicants allows us to manage
                         the recruitment process, assess and confirm a
                         candidate’s suitability for employment and choose
-                        between candidates. Stracon AB will process your
+                        between candidates. Stracon Group will process your
                         personal data for the following purposes: To manage all
                         aspects of the recruitment process. Your personal data
                         will be used to manage your job application, to assess
@@ -104,7 +104,7 @@ function Privacy() {
                         communicate with you before, during and after the
                         recruitment process. For example, in order to schedule
                         interviews and tests, provide you with feedback and
-                        inform you of other open positions at Stracon AB. To
+                        inform you of other open positions at Stracon Group. To
                         consider you for other positions. We may use your
                         personal data to consider you for other positions than
                         the one you are applying for, or for potential future
@@ -119,7 +119,7 @@ function Privacy() {
                         respond to and defend us against legal claims. To manage
                         your employment with us. In the event of your
                         application resulting in the offer and your acceptance
-                        of a position at Stracon AB, the data collected will
+                        of a position at Stracon Group, the data collected will
                         become part of your employment record and will be used
                         for employment purposes, in accordance with our employee
                         privacy policy.
@@ -159,14 +159,14 @@ function Privacy() {
                         provided, to make any necessary reference checks.
                         <br/> 
                         <br/>
-                        <b>5.Where we process your personal data</b> <br/>Stracon AB always
+                        <b>5.Where we process your personal data</b> <br/>Stracon Group always
                         strives to process and store your data within the
                         EU/EEA. However, your data may in certain situations be
                         transferred to, and stored at, a destination outside of
                         the EU/EEA territory. Please note that privacy laws in
                         countries outside of the EU/EEA may not be the same as,
                         and in some cases may be less protective than, privacy
-                        laws in your country. Stracon AB will however take all
+                        laws in your country. Stracon Group will however take all
                         steps necessary to ensure that adequate safeguards (for
                         example, EU standard Model Clauses and Privacy Shield)
                         are in place to protect your personal information and to
@@ -174,7 +174,7 @@ function Privacy() {
                         <br/> 
                         <br/>
                         <b>6. How long we keep
-                        your personal data</b> <br/>Stracon AB keeps your personal data
+                        your personal data</b> <br/>Stracon Group keeps your personal data
                         only as long as necessary for the recruitment process.
                         However, we may keep your personal data up to two years
                         after the position has been filled. The reason for this
@@ -231,7 +231,7 @@ function Privacy() {
                         <br/> 
                         <br/>
                         <b>8. How to
-                        contact us</b> <br/>Stracon AB is the responsible entity
+                        contact us</b> <br/>Stracon Group is the responsible entity
                         (controller) for the processing of your personal data as
                         described above. We are subject to Swedish data
                         protection legislation, including the General Data

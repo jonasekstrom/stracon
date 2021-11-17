@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
-import Hunken from "../../img/bakgrunder/patrik.jpg";
+import Hunken from "../../img/bakgrunder/patrik.png";
 
 import "aos/dist/aos.css";
 
@@ -22,7 +22,7 @@ function Landing() {
       <div className="container p-5">
         <div>
           <h1 className="text-center border-bottom border-primary">
-            Välkommen till Stracon
+            Välkommen till Stracon Group
           </h1>
           <p className="mt-3 text-center">
             Stracon bidrar till att göra tillvaron lite bättre för

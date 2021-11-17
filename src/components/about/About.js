@@ -31,7 +31,7 @@ function About() {
             <div className="my-auto px-3">
               <h2>Historik</h2>
               <p>
-                Stracon är ett nyetablerat företag, som erbjuder rådgivningstjänster med ambitionen att verka
+                Stracon Group är ett nyetablerat företag, som erbjuder rådgivningstjänster med ambitionen att verka
                 tillsammans med och hjälpa industriföretag i och runt Göteborgs
                 med en tryggare och mer hållbar tillväxt. I förlängningen vill
                 företaget också erbjuda bemanningstjänster mot samma kund.
@@ -214,7 +214,7 @@ function About() {
               </p>
               <hr />
               <span>
-                Erfaren affärscoach och ledarsexpert som drivs av att
+                Erfaren affärscoach och ledarexpert som drivs av att
                 hjälpa andra att skapa enastående förändringar för jobb inom
                 näringslivet. Värdefull branscherfarenhet i kombination med
                 flera års tjänstgöring som säljare och ledare för branschfolk.

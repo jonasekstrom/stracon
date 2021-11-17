@@ -112,7 +112,7 @@
 .footer {
   color: #ffff;
   min-height: 150px;
-  background-color: rgba(7, 26, 134, 0.8);
+  background-color: rgba(7, 26, 134, 0.3);
   
 }
 .minHeight {
@@ -166,7 +166,7 @@ padding: 50px;
 }
 
 #services {
-  background: url(../src/img/bakgrunder/patrik.jpg) no-repeat top center fixed;
+  background: url(../src/img/bakgrunder/patrik.png) no-repeat top center fixed;
   background-size: cover;
   min-height: 300px;
   position: relative;

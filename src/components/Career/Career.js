@@ -158,7 +158,7 @@ function Career() {
                 required
               />
             </div>
-            <div className="mt-3">
+            {/* <div className="mt-3">
               <label htmlFor="selectBirthyear" className="form-label">
                 Födelseår:
               </label>
@@ -171,7 +171,7 @@ function Career() {
                 <option defaultValue>Födelseår</option>
                 {generateArrayOfYears()}
               </select>
-            </div>
+            </div> */}
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
                 CV:*
@@ -196,7 +196,7 @@ function Career() {
                 onChange={setOtherFiles}
               />
             </div>
-            <div className="mt-3">
+           {/*  <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
                 Foto:
               </label>
@@ -207,7 +207,7 @@ function Career() {
                 name="photo"
                 onChange={setPhotograph}
               />
-            </div>
+            </div> */}
             <div className="mt-3">
               <label htmlFor="personligtbrev" className="form-label">
                 Beskriv kortfattat varför du är intresserad av att jobba hos
@@ -232,7 +232,7 @@ function Career() {
               />
               <label className="form-check-label" htmlFor="policy">
                 <p>
-                  Jag har läst och accepterar Stracons
+                  Jag har läst och accepterar Stracon Groups
                   <a
                     href="/#"
                     data-bs-toggle="modal"
@@ -272,7 +272,7 @@ function Career() {
                           className="btn btn-outline-secondary"
                           data-bs-dismiss="modal"
                         >
-                          Close
+                          Stäng
                         </button>
                       </div>
                     </div>
