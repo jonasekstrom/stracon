@@ -42,7 +42,7 @@ function Footer() {
                 <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+{/*             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
               <a
                 href="https://www.businessregiongoteborg.se/"
                 target="_blank"
@@ -63,7 +63,7 @@ function Footer() {
               >
                 <h1 className="kompetensplus">Kompetens+</h1>
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="container mt-4 ">
