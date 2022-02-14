@@ -1,4 +1,7 @@
+import React,{useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ReactGa from "react-ga4";
+
 import Topbar from "./components/Topbar/Topbar";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -11,6 +14,11 @@ import About from './components/about/About';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize('G-J1PEPYXR5G')
+
+    ReactGa.send("pageview")
+}, [])
   return (
     <Router>
     <div className="container-fluid p-0">

@@ -11,18 +11,15 @@ function Career() {
     Aos.init({ duration: 2000 });
   }, []);
   const [file, setFile] = useState("");
-  const [photo, setPhoto] = useState({});
   const [otherDocuments, setOtherDocuments] = useState("");
   const [formStatus, setFormStatus] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    birthYear: "",
     cv: "",
     cvFileName: "",
     other: "",
-    photo: "",
     text: "",
   });
   const [human, setHuman] = useState(false);
@@ -41,9 +38,6 @@ function Career() {
   const setOtherFiles = (e) => {
     setOtherDocuments(e.target.files);
   };
-  const setPhotograph = (e) => {
-    setPhoto(e.target.files[0]);
-  };
  
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -53,8 +47,6 @@ function Career() {
     newData.append("name", formData.name);
     newData.append("email", formData.email);
     newData.append("message", formData.message);
-    newData.append("birthyear", formData.birthYear);
-    newData.append("photo", photo);
     for (var i = 0; i < otherDocuments.length; i++) {
       newData.append(otherDocuments[i].name, otherDocuments[i]);
     }
@@ -81,36 +73,18 @@ function Career() {
           setFormData({name: "",
           email: "",
           message: "",
-          birthYear: "",
           cv: "",
           cvFileName: "",
           other: "",
-          photo: "",
           text: "",})
           setHuman()
           setFile("")
-          setPhoto({})
           setOtherDocuments("")
         }
       } catch (err) {}
     }
   };
 
-  const generateArrayOfYears = () => {
-    let max = new Date().getFullYear();
-    max = max - 17;
-    let min = max - 60;
-    let years = [];
-    for (let i = max; i >= min; i--) {
-      years.push(i);
-    }
-
-    return years.map((year, index) => (
-      <option key={index} value={year}>
-        {year}
-      </option>
-    ));
-  };
   return (
     <div>
       <div className="hero">
@@ -158,20 +132,7 @@ function Career() {
                 required
               />
             </div>
-            {/* <div className="mt-3">
-              <label htmlFor="selectBirthyear" className="form-label">
-                Födelseår:
-              </label>
-              <select
-                className="form-select form-select"
-                id="selectBirthyear"
-                name="birthYear"
-                onChange={(e) => onChange(e)}
-              >
-                <option defaultValue>Födelseår</option>
-                {generateArrayOfYears()}
-              </select>
-            </div> */}
+
             <div className="mt-3">
               <label htmlFor="formFile" className="form-label">
                 CV:*
@@ -196,18 +157,7 @@ function Career() {
                 onChange={setOtherFiles}
               />
             </div>
-           {/*  <div className="mt-3">
-              <label htmlFor="formFile" className="form-label">
-                Foto:
-              </label>
-              <input
-                className="form-control"
-                type="file"
-                id="formFile"
-                name="photo"
-                onChange={setPhotograph}
-              />
-            </div> */}
+
             <div className="mt-3">
               <label htmlFor="personligtbrev" className="form-label">
                 Beskriv kortfattat varför du är intresserad av att jobba hos
