@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize('G-9G2G4LNQZP')
+    ReactGa.initialize('G-J1PEPYXR5G')
 
     ReactGa.send("pageview")
 }, [])
