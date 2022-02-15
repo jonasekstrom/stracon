@@ -25,9 +25,9 @@ function Topbar() {
           </div>
           <div className="col-md-4">
             <div className="social text-right">
-              <a href="#" className="link-unstyled">
+{/*               <a href="#" className="link-unstyled">
                 <i className="fab fa-facebook fa-2x me-2"></i>
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/company/74692120"
                 target="_blank"

@@ -80,7 +80,7 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div
+{/*         <div
           className="row justify-content-center margin50"
           data-aos="flip-up"
           data-aos-once="true"
@@ -110,7 +110,7 @@ function Contact() {
             <i className="fab fa-instagram-square fa-4x me-4"></i>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="container">
           <span className="anchor" id="formular"></span>
 
