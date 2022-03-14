@@ -235,11 +235,11 @@ function JobListing() {
                 </a>
                 <br />
                 <a
-                  href="mailto:info@stracon.se"
+                  href="mailto:patrik@stracon.se"
                   className=" text-decoration-none text-reset"
                 >
                   <i className="far fa-envelope fa me-1"> </i>
-                  info@stracon.se
+                  patrik@stracon.se
                 </a>
               </div>
             </div>
