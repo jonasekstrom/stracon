@@ -20,7 +20,7 @@ function Editlisting() {
     ingress: "",
     aboutCompany: "",
     scope: "",
-    tasks: [],
+    tasks: "",
     education: "",
     personalQualities: "",
     qualifications: "",
@@ -77,18 +77,11 @@ function Editlisting() {
 
   const onChange = (e) => {
     e.preventDefault();
-    if(e.target.name === "tasks" ){
-      let array = e.target.value.split(', ')
-      setFormData((prevState) => ({
-        ...prevState,
-        [e.target.name]: array,
-      }));
-    } else {
+   
       setFormData((prevState) => ({
         ...prevState,
         [e.target.name]: e.target.value,
       }));
-    }
  
   };
   const handleChange = (e) => {
@@ -132,14 +125,13 @@ function Editlisting() {
       deadline,
       published,
     };
-   
     const jobListingId = params.joblistingId
 
     const data = {
       userData,
       jobListingId
     }
-     dispatch(updateListing(data));
+      dispatch(updateListing(data));
     // add update dispatch
     setFormData({
       title: "",
