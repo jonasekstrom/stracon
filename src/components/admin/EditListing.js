@@ -20,7 +20,7 @@ function Editlisting() {
     ingress: "",
     aboutCompany: "",
     scope: "",
-    tasks: "",
+    tasks: [],
     education: "",
     personalQualities: "",
     qualifications: "",
@@ -61,7 +61,7 @@ function Editlisting() {
         ingress: listing.ingress,
         aboutCompany: listing.aboutCompany,
         scope: listing.scope,
-        tasks: listing.tasks,
+        tasks: listing.tasks.join(','),
         education: listing.education,
         personalQualities: listing.personalQualities,
         qualifications: listing.qualifications,
@@ -121,7 +121,7 @@ function Editlisting() {
       ingress,
       aboutCompany,
       scope,
-      tasks,
+      tasks: tasks.split(','),
       education,
       personalQualities,
       qualifications,
@@ -132,13 +132,14 @@ function Editlisting() {
       deadline,
       published,
     };
+   
     const jobListingId = params.joblistingId
 
     const data = {
       userData,
       jobListingId
     }
-    dispatch(updateListing(data));
+     dispatch(updateListing(data));
     // add update dispatch
     setFormData({
       title: "",
