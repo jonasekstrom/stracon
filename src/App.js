@@ -41,8 +41,8 @@ function App() {
       <Route  path="/" element={<Landing/>} />
         <Route  path="/uppdrag" element={<Assignments/>} />
         <Route  path="/karriar" element={<Career/>} />
-{/*         <Route  path="/jobs" element={<JobListings/>}></Route>
-        <Route  path="/jobs/:id" element={<Joblisting/>}></Route> */}
+        <Route  path="/jobs" element={<JobListings/>}></Route>
+        <Route  path="/jobs/:id" element={<Joblisting/>}></Route>
         <Route  path="/om-oss" element={<About/>} />
         <Route  path="/kontakta-oss" element={<Contact/>} />
         <Route  path="/privacy" element={<Privacy/>} />

@@ -46,7 +46,7 @@ function Navbar() {
                 KARRIÄR
               </Link>
             </li>
-{/*             <li className="nav-item">
+           <li className="nav-item">
               <Link
                 to="/jobs"
                 activeclassname="nav-link active"
@@ -54,7 +54,7 @@ function Navbar() {
               >
                 LEDIGA TJÄNSTER
               </Link>
-            </li> */}
+            </li>
             <li className="nav-item dropdown">
               <Link
                 to="/om-oss"
