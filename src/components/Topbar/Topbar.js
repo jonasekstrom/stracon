@@ -31,15 +31,15 @@ function Topbar() {
               <a
                 href="https://www.linkedin.com/company/74692120"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="link-unstyled"
               >
                 <i className="fab fa-linkedin fa-2x me-2"></i>
               </a>
-              <a href="https://www.instagram.com/stracon.se/" className="link-unstyled" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/stracon.se/" className="link-unstyled" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram fa-2x me-2"></i>
               </a>
-              <a href="https://www.youtube.com/channel/UCh-X31OXE0_sFAWNu2M8DJg" className="link-unstyled" target="_blank" rel="noreferrer">
+              <a href="https://www.youtube.com/channel/UCh-X31OXE0_sFAWNu2M8DJg" className="link-unstyled" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-youtube fa-2x"></i>
               </a>
             </div>

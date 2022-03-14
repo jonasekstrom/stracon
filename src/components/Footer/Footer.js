@@ -10,6 +10,8 @@ import Steeltech from "../../img/kunder/SteelTech_utan_platta_CMYK.png";
 import Presto from "../../img/kunder/presto.png";
 import Campreq from "../../img/kunder/campreq.png";
 import NordicWellnessSmall from "../../img/kunder/Nordic Wellness_logo_2rader_white.png";
+import Prodeff from "../../img/samarbeten/prodeff_svart.png"
+import Jemva from "../../img/samarbeten/Jemva.png"
 
 function Footer() {
   return (
@@ -27,8 +29,18 @@ function Footer() {
 
           <div className="row justify-content-center">
             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
-              <a href="https://kranmarkt.se/" target="_blank" rel="noreferrer">
+              <a href="https://www.prodeff.se/" target="_blank" rel="noopener noreferrer">
+                <img src={Prodeff} alt="Prodeff" className="img-fluid" />
+              </a>
+            </div>
+            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
+              <a href="https://kranmarkt.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />
+              </a>
+            </div>
+            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
+              <a href="https://www.jemva.se/" target="_blank" rel="noopener noreferrer">
+                <img src={Jemva} alt="Jemva" className="img-fluid" />
               </a>
             </div>
 
@@ -42,7 +54,7 @@ function Footer() {
               <a
                 href="https://nordicwellness.se/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <img
                   src={NordicWellnessSmall}
@@ -52,7 +64,7 @@ function Footer() {
               </a>
             </div>
             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-              <a href="http://sweagroup.se/" target="_blank" rel="noreferrer">
+              <a href="http://sweagroup.se/" target="_blank" rel="noopener noreferrer">
                 <img src={SweaGroup} alt="Swea Group" className="img-fluid" />
               </a>
             </div>
@@ -60,7 +72,7 @@ function Footer() {
               <a
                 href="https://worldclasstrelleborg.se/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <img
                   src={WorldClass}
@@ -73,13 +85,13 @@ function Footer() {
               <a
                 href="https://www.prestomarine.com/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <img src={Presto} alt="Presto Marine" className="img-fluid" />
               </a>
             </div>
             <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
-              <a href="https://campreq.se/" target="_blank" rel="noreferrer">
+              <a href="https://campreq.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Campreq} alt="Campreq" className="img-fluid" />
               </a>
             </div>
@@ -87,7 +99,7 @@ function Footer() {
               <a
                 href="https://www.steeltech.se"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <img src={Steeltech} alt="Steeltech" className="img-fluid" />
               </a>

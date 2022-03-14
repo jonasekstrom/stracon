@@ -96,11 +96,11 @@ function Career() {
         <div className="centered text-white">Söker du nya utmaningar?</div>
       </div>
       <div className="container">
-        <h1 className="text-center my-5">Spontanansökan</h1>
+        <h1 className="text-center my-5">Ansökan</h1>
         <div className="mx-auto col col-md-8">
           Om du är intresserad av ett uppdrag hos Stracon är du välkommen att
           skicka in ditt CV och personliga brev här. Vi ser över
-          spontanansökningar som kommit in med jämna mellanrum, vi kontaktar dig
+          ansökningar som kommit in med jämna mellanrum, vi kontaktar dig
           för en profileringsintervju och informationsmöte. <br /> <br />
           Därefter får du besked om du läggs in i vårt konsultarkiv och
           kvalificeras till en djupintervju. <br /> <br />

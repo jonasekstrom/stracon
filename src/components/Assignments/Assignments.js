@@ -97,7 +97,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -114,7 +114,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -131,7 +131,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -148,7 +148,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -166,7 +166,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -187,7 +187,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
@@ -207,7 +207,7 @@ function Assignments() {
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
                   >
-                    <span>Få Offert</span>
+                    <span>Gratis konsultation</span>
                   </HashLink>
                 </div>
               </div>
