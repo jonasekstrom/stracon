@@ -37,6 +37,7 @@ function PreviewListing() {
     license: "",
     travels: "",
     location: "",
+    merits: "",
     deadline: "",
     published: false,
   });
@@ -77,6 +78,7 @@ function PreviewListing() {
         license: listing.license,
         travels: listing.travels,
         location: listing.location,
+        merits: listing.merits,
         deadline: listing.deadline,
         published: listing.published,
       });
@@ -95,7 +97,13 @@ function PreviewListing() {
   const setOtherFiles = (e) => {
     setOtherDocuments(e.target.files);
   };
-
+  const printPart = () => {
+    var printwin = window.open("");
+    printwin.document.write(document.getElementById("toprint").innerHTML);
+    printwin.stop();
+    printwin.print();
+    printwin.close();
+  }
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -158,6 +166,7 @@ function PreviewListing() {
     languages,
     license,
     travels,
+    merits,
     location,
     deadline
   } = formData;
@@ -170,42 +179,52 @@ function PreviewListing() {
       >
         Gå tillbaka
       </button>
+      <button
+        className="btn btn-secondary me-3 float-end"
+        onClick={() => printPart()}
+      >
+       <i className="fas fa-print"></i>
+      </button>
+    
       <br />
-      <div className="row mx-auto justify-content-between">
-        <div className="col-md-7">
+      <div className="row mx-auto justify-content-between" >
+        <div className="col-md-7" id="toprint">
           <h1 className="text-center my-5">{title}</h1>
           <div className="mb-3">
             <span className="font-italic bold">{ingress}</span>
           </div>
           <p>{aboutCompany}</p>
-          <div className="mb-3">
-            <span className="d-inline">Omfattning: </span>
-            <span className="d-inline">{scope}</span>
-          </div>
 
-          <h4>Arbetsuppgifter:</h4>
+
+          <p>Arbetsuppgifter:</p>
           <ul>
             {tasks.map((task, index) => {
               return <li key={index}>{task}</li>;
             })}
           </ul>
-          {education !== "" ? <><div className="mb-3">
-            <span className="d-inline">Utbildning: </span>
-            <span className="d-inline">{education}</span>
-          </div></>:<div></div>}
-          <div className="mb-3">
-            <span className="d-inline">Personliga egenskaper: </span>
-            <span className="d-inline">{personalQualities}</span>
-          </div>
-          <div className="mb-3">
-            <span className="d-inline">Kvalifikationer: </span>
+
+          {personalQualities !== "" ? <div className="mb-3">
+            <div className="d-inline">Din Erfarenhet: </div>
+            <div className="d-inline">{personalQualities}</div>
+          </div>:<></>}
+          {qualifications !== "" ? <div className="mb-4">
+            <span className="d-inline">Om Dig: </span>
             <span className="d-inline">{qualifications}</span>
-          </div>
+          </div>:<></>}
+          {education !== "" ? <div className="mb-3">
+            <span className="d-inline">{education}</span>
+          </div>:<></>}
           {languages !== "" ? <p>{languages} </p> : <></>}
           {license !== "" ? <p>{license}</p>:<></>}
           {travels !== "" ? <div className="mb-3">
             <p>{travels}</p>
-          </div>:<div></div>}
+          </div>:<></>}
+          {merits !== "" ? <p>{merits}</p>:<></>}
+          {scope !== "" ? <div className="mb-3">
+            <span className="d-inline">Omfattning: </span>
+            <span className="d-inline">{scope}</span>
+          </div>:<></>}
+          {location !== "" ?<p>Ort: {location}</p>:<></>}
           <div className="mt-5">
             <p>
               Vi arbetar med löpande urval så tveka inte att skicka in din
@@ -216,7 +235,7 @@ function PreviewListing() {
                 href="tel:+46(0)709-666464"
                 className=" text-decoration-none text-reset"
               >
-                +46(0)709-666464
+                +46(0)709-66 64 64
               </a>
               .{" "}
             </p>
@@ -242,7 +261,7 @@ function PreviewListing() {
                   href="tel:+46(0)709-666464"
                   className=" text-decoration-none text-reset"
                 >
-                  <i className="fas fa-phone-square me-1"></i>+46(0)709-666464
+                  <i className="fas fa-phone-square me-1"></i>+46(0)709-66 64 64
                 </a>
                 <br />
                 <a
@@ -256,13 +275,10 @@ function PreviewListing() {
             </div>
             <div className="card-body">
               <p className="card-text"></p>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">Ort: {location}</li>
-                <li className="list-group-item">
+             
+                <div className="border-bottom text-center">
                   Sista ansökningsdag: {new Date(deadline).toLocaleDateString('sv-SE')}
-                </li>
-                <li className="list-group-item"></li>
-              </ul>
+                </div>
             </div>
 
             <div className="card-body text-center">
@@ -274,7 +290,12 @@ function PreviewListing() {
                 Ansök nu
               </button>
 
-              <div
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
                 className="modal fade"
                 id="applicationModal"
                 tabIndex="-1"
@@ -406,10 +427,6 @@ function PreviewListing() {
                   </div>:<div className="modal-content"><div className="thankyou"><span><h5>Tack för din ansökan!</h5><br/>Vi hör av oss inom kort</span></div></div>}
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

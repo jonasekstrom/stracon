@@ -48,7 +48,7 @@ function Navbar() {
             </li>
            <li className="nav-item">
               <Link
-                to="/jobs"
+                to="/lediga-tjanster"
                 activeclassname="nav-link active"
                 className="nav-link"
               >

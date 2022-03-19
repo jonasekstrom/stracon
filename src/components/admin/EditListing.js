@@ -28,6 +28,7 @@ function Editlisting() {
     license: "",
     travels: "",
     location: "",
+    merits: "",
     deadline: "2022-05-02",
     published: "false",
   });
@@ -61,13 +62,14 @@ function Editlisting() {
         ingress: listing.ingress,
         aboutCompany: listing.aboutCompany,
         scope: listing.scope,
-        tasks: listing.tasks.join(','),
+        tasks: listing.tasks.join(';'),
         education: listing.education,
         personalQualities: listing.personalQualities,
         qualifications: listing.qualifications,
         languages: listing.languages,
         license: listing.license,
         travels: listing.travels,
+        merits: listing.merits,
         location: listing.location,
         deadline: new Date(listing.deadline).toLocaleDateString('sv-SE'),
         published: listing.published,
@@ -106,6 +108,7 @@ function Editlisting() {
       travels,
       location,
       deadline,
+      merits,
       published,
     } = formData;
 
@@ -114,7 +117,7 @@ function Editlisting() {
       ingress,
       aboutCompany,
       scope,
-      tasks: tasks.split(','),
+      tasks: tasks.split(';'),
       education,
       personalQualities,
       qualifications,
@@ -122,6 +125,7 @@ function Editlisting() {
       license,
       travels,
       location,
+      merits,
       deadline,
       published,
     };
@@ -145,6 +149,7 @@ function Editlisting() {
       languages: "",
       license: "",
       travels: "",
+      merits: "",
       location: "",
       deadline: "",
       published: "false",
@@ -165,6 +170,7 @@ function Editlisting() {
     travels,
     location,
     deadline,
+    merits,
     published,
   } = formData;
   return (
@@ -189,7 +195,7 @@ function Editlisting() {
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="ingress">Inledande text</label>
+          <label htmlFor="ingress">Om Stracon</label>
           <textarea
             className="form-control"
             type="ingress"
@@ -201,7 +207,7 @@ function Editlisting() {
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="aboutCompany">Om företaget</label>
+          <label htmlFor="aboutCompany">Om Kunden</label>
           <textarea
             className="form-control"
             type="aboutCompany"
@@ -212,42 +218,23 @@ function Editlisting() {
             rows="4"
           ></textarea>
         </div>
-        <div className="form-group mt-4">
-          <label htmlFor="scope">Omfattning</label>
-          <input
-            className="form-control"
-            type="scope"
-            name="scope"
-            id="scope"
-            value={scope}
-            onChange={onChange}
-          />
-        </div>
+
         <div className="form-group mt-4">
           <label htmlFor="tasks">Arbetsuppgifter</label>
-          <input
+          <textarea
             className="form-control"
             type="tasks"
             name="tasks"
             id="tasks"
             value={tasks}
-            placeholder="Hantera löner, inköp, kundservice, osv"
+            placeholder="Hantera löner; inköp; kundservice; osv"
             onChange={onChange}
-          />
+            rows="5"
+          ></textarea>
         </div>
+
         <div className="form-group mt-4">
-          <label htmlFor="education">Utbildningskrav</label>
-          <input
-            className="form-control"
-            type="education"
-            name="education"
-            id="education"
-            value={education}
-            onChange={onChange}
-          />
-        </div>
-        <div className="form-group mt-4">
-          <label htmlFor="personalQualities">Personliga egenskaper</label>
+          <label htmlFor="personalQualities">Din Erfarenhet</label>
           <textarea
             className="form-control"
             type="personalQualities"
@@ -259,7 +246,7 @@ function Editlisting() {
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="qualifications">Kvalifikationer</label>
+          <label htmlFor="qualifications">Om Dig</label>
           <textarea
             className="form-control"
             type="qualifications"
@@ -271,7 +258,18 @@ function Editlisting() {
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="languages">Språkkrav</label>
+          <label htmlFor="education">Utbildningskrav/Övrigt</label>
+          <input
+            className="form-control"
+            type="education"
+            name="education"
+            id="education"
+            value={education}
+            onChange={onChange}
+          />
+        </div>
+        <div className="form-group mt-4">
+          <label htmlFor="languages">Språkkrav/Övrigt</label>
           <input
             className="form-control"
             type="languages"
@@ -282,7 +280,7 @@ function Editlisting() {
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="travels">Resekrav</label>
+          <label htmlFor="travels">Resekrav/Övrigt</label>
           <input
             className="form-control"
             type="travels"
@@ -293,13 +291,37 @@ function Editlisting() {
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="license">Behörighet</label>
+          <label htmlFor="license">Behörighet eller annan kompetens</label>
           <input
             className="form-control"
             type="license"
             name="license"
             id="license"
             value={license}
+            onChange={onChange}
+          />
+        </div>
+        <div className="form-group mt-4">
+          <label htmlFor="merits">Meriterande</label>
+          <textarea
+            className="form-control"
+            type="text"
+            name="merits"
+            id="merits"
+            value={merits}
+            onChange={onChange}
+            rows="4"
+            
+          ></textarea>
+        </div>
+        <div className="form-group mt-4">
+          <label htmlFor="scope">Omfattning</label>
+          <input
+            className="form-control"
+            type="scope"
+            name="scope"
+            id="scope"
+            value={scope}
             onChange={onChange}
           />
         </div>

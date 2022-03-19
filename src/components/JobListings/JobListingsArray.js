@@ -16,7 +16,7 @@ function JobListingsArray({ listing, index }) {
             data-toggle="tooltip"
             data-placement="top"
             title="Läs mer"
-            onClick={() => navigate(`/jobs/${listing._id}`)}
+            onClick={() => navigate(`/lediga-tjanster/${listing._id}`)}
           >
             <span>Läs mer</span>
           </button>

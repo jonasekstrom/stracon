@@ -15,6 +15,7 @@ const initialState = {
     languages: "",
     license: "",
     travels: "",
+    merits: "",
     deadline: "2022-05-02",
     location: "",
     published: "",

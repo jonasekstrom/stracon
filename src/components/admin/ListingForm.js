@@ -8,7 +8,7 @@ import { createListing } from "../../features/listings/listingSlice";
 function ListingForm() {
   const [formData, setFormData] = useState({
     title: "",
-    ingress: "",
+    ingress: "Stracon Group AB är ett företag som erbjuder rådgivningstjänster inom kunskapsområdet sälj och marknad, med uppdraget att verka tillsammans med och hjälpa företag med en trygg, balanserad och hållbar tillväxt. Våra kunder erbjuds också interima-bemanningstjänster där akuta vakanser eller tidsbestämda förstärkningar behövs, i vissa fall genomförs även rekryteringsuppdrag.",
     aboutCompany: "",
     scope: "",
     tasks: [],
@@ -19,6 +19,7 @@ function ListingForm() {
     license: "",
     travels: "",
     location: "",
+    merits: "",
     deadline: "",
     published: "false",
   });
@@ -46,6 +47,7 @@ function ListingForm() {
       travels,
       location,
       deadline,
+      merits,
       published,
     } = formData;
 
@@ -54,7 +56,7 @@ function ListingForm() {
       ingress,
       aboutCompany,
       scope,
-      tasks: tasks.split(","),
+      tasks: tasks.split(";"),
       education,
       personalQualities,
       qualifications,
@@ -62,6 +64,7 @@ function ListingForm() {
       license,
       travels,
       location,
+      merits,
       deadline,
       published,
     };
@@ -79,11 +82,18 @@ function ListingForm() {
       languages: "",
       license: "",
       travels: "",
+      merits: "",
       location: "",
       deadline: "",
       published: "",
     });
     navigate("/admin/dashboard/");
+  };
+  const handleChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      published: e.target.value,
+    }));
   };
   const {
     title,
@@ -98,7 +108,9 @@ function ListingForm() {
     license,
     location,
     deadline,
+    merits,
     travels,
+    published
   } = formData;
   return (
     <section className="container">
@@ -119,11 +131,11 @@ function ListingForm() {
             id="title"
             value={title}
             onChange={onChange}
-            required
+            
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="ingress">Inledande text</label>
+          <label htmlFor="ingress">Om Stracon</label>
           <textarea
             className="form-control"
             type="text"
@@ -135,7 +147,7 @@ function ListingForm() {
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="aboutCompany">Om företaget</label>
+          <label htmlFor="aboutCompany">Om Kunden</label>
           <textarea
             className="form-control"
             type="text"
@@ -144,48 +156,27 @@ function ListingForm() {
             value={aboutCompany}
             onChange={onChange}
             rows="4"
-            required
+            
           ></textarea>
         </div>
-        <div className="form-group mt-4">
-          <label htmlFor="scope">Omfattning</label>
-          <input
-            className="form-control"
-            type="text"
-            name="scope"
-            id="scope"
-            value={scope}
-            onChange={onChange}
-            required
-          />
-        </div>
+
         <div className="form-group mt-4">
           <label htmlFor="tasks">Arbetsuppgifter</label>
-          <input
+          <textarea
             className="form-control"
             type="text"
             name="tasks"
             id="tasks"
             value={tasks}
-            placeholder="Hantera löner, inköp, kundservice, osv"
+            placeholder="Hantera löner; inköp; kundservice; osv"
             onChange={onChange}
-            required
-          />
+            rows="5"
+            
+          ></textarea>
         </div>
+
         <div className="form-group mt-4">
-          <label htmlFor="education">Utbildningskrav</label>
-          <input
-            className="form-control"
-            type="text"
-            name="education"
-            id="education"
-            value={education}
-            onChange={onChange}
-            required
-          />
-        </div>
-        <div className="form-group mt-4">
-          <label htmlFor="personalQualities">Personliga egenskaper</label>
+          <label htmlFor="personalQualities">Din Erfarenhet</label>
           <textarea
             className="form-control"
             type="text"
@@ -194,11 +185,11 @@ function ListingForm() {
             value={personalQualities}
             onChange={onChange}
             rows="4"
-            required
+            
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="qualifications">Kvalifikationer</label>
+          <label htmlFor="qualifications">Om Dig</label>
           <textarea
             className="form-control"
             type="text"
@@ -207,11 +198,23 @@ function ListingForm() {
             value={qualifications}
             onChange={onChange}
             rows="4"
-            required
+            
           ></textarea>
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="languages">Språkkrav eller annat</label>
+          <label htmlFor="education">Utbildningskrav/Övrigt</label>
+          <input
+            className="form-control"
+            type="text"
+            name="education"
+            id="education"
+            value={education}
+            onChange={onChange}
+            
+          />
+        </div>
+        <div className="form-group mt-4">
+          <label htmlFor="languages">Språkkrav/Övrigt</label>
           <input
             className="form-control"
             type="text"
@@ -222,7 +225,7 @@ function ListingForm() {
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="travels">Resekrav eller annat</label>
+          <label htmlFor="travels">Resekrav/Övrigt</label>
           <input
             className="form-control"
             type="text"
@@ -246,6 +249,31 @@ function ListingForm() {
           />
         </div>
         <div className="form-group mt-4">
+          <label htmlFor="merits">Meriterande</label>
+          <textarea
+            className="form-control"
+            type="text"
+            name="merits"
+            id="merits"
+            value={merits}
+            onChange={onChange}
+            rows="4"
+            
+          ></textarea>
+        </div>
+        <div className="form-group mt-4">
+          <label htmlFor="scope">Omfattning</label>
+          <input
+            className="form-control"
+            type="text"
+            name="scope"
+            id="scope"
+            value={scope}
+            onChange={onChange}
+            
+          />
+        </div>
+        <div className="form-group mt-4">
           <label htmlFor="location">Ort</label>
           <input
             className="form-control"
@@ -254,7 +282,7 @@ function ListingForm() {
             id="location"
             value={location}
             onChange={onChange}
-            required
+            
           />
         </div>
         <div className="form-group mt-4">
@@ -266,11 +294,18 @@ function ListingForm() {
             id="deadline"
             value={deadline}
             onChange={onChange}
-            required
+            
           />
         </div>
         <div className="form-group mt-4">
-          <label htmlFor="published">Publiserad</label>
+        <label htmlFor="published">Publicerad</label>
+          <select name="published" className="form-select" value={published} onChange={handleChange}>
+            <option value="true">Publicerad</option>
+            <option value="false">Ej publicerad</option>
+          </select>
+        </div>
+{/*         <div className="form-group mt-4">
+          <label htmlFor="published">Publicerad</label>
           <div className="form-check form-check-inline">
             <input
               className="form-check-input m-1"
@@ -297,7 +332,7 @@ function ListingForm() {
               Nej
             </label>
           </div>
-        </div>
+        </div> */}
         <div className="form-group mt-4 text-center">
           <button className="btn btn-success btn-block" type="submit">
             Lägg till jobbannons

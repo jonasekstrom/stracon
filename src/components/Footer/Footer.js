@@ -16,7 +16,7 @@ import Jemva from "../../img/samarbeten/Jemva.png"
 function Footer() {
   return (
     <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
         <path
           fill="#071a86"
           fillOpacity="0.3"
@@ -28,17 +28,17 @@ function Footer() {
           <h3 className="text-center pb-2 text-dark">I samarbete med</h3>
 
           <div className="row justify-content-center">
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto">
               <a href="https://www.prodeff.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Prodeff} alt="Prodeff" className="img-fluid" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto">
               <a href="https://kranmarkt.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Kranmarkt} alt="Kranmärkt" className="kranmarkt" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto">
               <a href="https://www.jemva.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Jemva} alt="Jemva" className="img-fluid" />
               </a>
@@ -50,7 +50,7 @@ function Footer() {
           <h3 className="text-center pb-2 text-dark">Några av våra kunder</h3>
 
           <div className="row justify-content-center">
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a
                 href="https://nordicwellness.se/"
                 target="_blank"
@@ -63,12 +63,12 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a href="http://sweagroup.se/" target="_blank" rel="noopener noreferrer">
-                <img src={SweaGroup} alt="Swea Group" className="img-fluid" />
+                <img src={SweaGroup} alt="Swea Group" className="kranmarkt" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a
                 href="https://worldclasstrelleborg.se/"
                 target="_blank"
@@ -81,7 +81,7 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a
                 href="https://www.prestomarine.com/"
                 target="_blank"
@@ -90,12 +90,12 @@ function Footer() {
                 <img src={Presto} alt="Presto Marine" className="img-fluid" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a href="https://campreq.se/" target="_blank" rel="noopener noreferrer">
                 <img src={Campreq} alt="Campreq" className="img-fluid" />
               </a>
             </div>
-            <div className="col-7 col-sm-4 text-center mt-4 my-sm-auto ">
+            <div className="col-7 col-sm-2 text-center mt-4 my-sm-auto ">
               <a
                 href="https://www.steeltech.se"
                 target="_blank"
