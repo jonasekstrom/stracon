@@ -186,8 +186,8 @@ function JobListing() {
           </div>
           <p>{aboutCompany}</p>
           <div className="mb-3">
-            <span className="d-inline">Omfattning: </span>
-            <span className="d-inline">{scope}</span>
+{/*             <span className="d-inline">Omfattning: </span>
+            <span className="d-inline">{scope}</span> */}
           </div>
 
           <p>Arbetsuppgifter:</p>
