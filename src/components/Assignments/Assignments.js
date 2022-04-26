@@ -13,13 +13,11 @@ import Utbildning from "../../img/bakgrunder/utbildning.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const placeholderText = [
-  "Projektledning",
+  "Interim bemanning",
+  "Affärsutveckling",
+  "Rekrytering",
   "Rådgivning",
-  "Bemanning",
-  "Ledarskap",
-  "Utbildning",
-  "Interim Uppdrag",
-  "Styrelsesupport",
+  "Styrelseuppdrag",
 ];
 
 function Assignments() {
@@ -86,30 +84,13 @@ function Assignments() {
           <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <div className="col" data-aos="fade-right">
               <div className="card h-100">
-                <img src={Change} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">Rådgivning </h5>
+                <img src={Brainstorm} className="card-img-top" alt="..." />
+                <h5 className="card-title text-center pt-2">Interim bemanning </h5>
                 <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Management rådgivning, uppbyggnad av marknadsplattform
+                  <p className="card-text text-md-left">
+                  Vi hjälper vår kund med att snabbt tillsätta utsatta marknadstjänster vid tex. sjukdom, uppsägning eller planerade resursökningar och marknadsinsatser
                   </p>
 
-                  <HashLink
-                    to="/kontakta-oss#formular"
-                    className="cta align-self-end mt-auto"
-                  >
-                    <span>Gratis konsultation</span>
-                  </HashLink>
-                </div>
-              </div>
-            </div>
-            <div className="col" data-aos="fade-right">
-              <div className="card h-100">
-                <img src={Bemanning} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">Bemanning </h5>
-                <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Matchande av kompetenser för akuta behov
-                  </p>
                   <HashLink
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
@@ -122,10 +103,10 @@ function Assignments() {
             <div className="col" data-aos="fade-right">
               <div className="card h-100">
                 <img src={Cogwheel} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">Projektledning </h5>
+                <h5 className="card-title text-center pt-2">Affärsutveckling </h5>
                 <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Genomförande av sälj/marknads projekt
+                  <p className="card-text text-md-left">
+                  Marknader och branscher rör sig snabbt, en lojal kund idag, köper av någon annan i morgon. Just Därför behövs Stracon, företaget som byggdes med drivkraften att vilja stötta organisationer i tillväxtfas och har en naturlig plats i det lokala näringslivet 
                   </p>
                   <HashLink
                     to="/kontakta-oss#formular"
@@ -138,11 +119,11 @@ function Assignments() {
             </div>
             <div className="col" data-aos="fade-right">
               <div className="card h-100">
-                <img src={Leadership} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">Ledarskap</h5>
+                <img src={Bemanning} className="card-img-top" alt="..." />
+                <h5 className="card-title text-center pt-2">Rekrytering </h5>
                 <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Leda, motivera, coacha individer eller arbetsgrupper
+                  <p className="card-text text-md-left">
+                  Med vårt kompetensbaserade tillvägagångsätt hittar vi den mest lämpade kandidaten för ditt uppdrag, vi gör ditt beslut enkelt
                   </p>
                   <HashLink
                     to="/kontakta-oss#formular"
@@ -155,34 +136,14 @@ function Assignments() {
             </div>
             <div className="col" data-aos="fade-right">
               <div className="card h-100">
-                <img src={Utbildning} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">Utbildning</h5>
+                <img src={Change} className="card-img-top" alt="..." />
+                <h5 className="card-title text-center pt-2">Rådgivning</h5>
                 <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Utbilda säljare, tekniker, eller montörer i
-                    försäljningsteknik
-                  </p>
-                  <HashLink
-                    to="/kontakta-oss#formular"
-                    className="cta align-self-end mt-auto"
-                  >
-                    <span>Gratis konsultation</span>
-                  </HashLink>
-                </div>
-              </div>
-            </div>
-            <div className="col" data-aos="fade-right">
-              <div className="card h-100">
-                <img src={Brainstorm} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">
-                  Interim uppdrag{" "}
-                </h5>
-                <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Snabb tillsättning av VD, säljchef på vikariat, deltid,
-                    heltid
-                  </p>
+                  <p className="card-text text-md-left">
+                  Ledarskap - Leda, motivera, coacha individer eller arbetsgrupper <br /><br />
+Utbildning - Utbilda säljare, tekniker, eller montörer i försäljningsteknik
 
+                  </p>
                   <HashLink
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
@@ -195,14 +156,11 @@ function Assignments() {
             <div className="col" data-aos="fade-right">
               <div className="card h-100">
                 <img src={Boardmeeting} className="card-img-top" alt="..." />
-                <h5 className="card-title text-center pt-2">
-                  Styrelsesupport{" "}
-                </h5>
+                <h5 className="card-title text-center pt-2">Styrelseuppdrag</h5>
                 <div className="card-body d-flex flex-column">
-                  <p className="card-text text-center text-md-left">
-                    Support och expertis i marknadsfrågor
+                  <p className="card-text text-md-left">
+                  Driver styrelsen framåt, som fullvärdig medlem eller extern resurs. Följer upp beslut och uppgifter operativt, support och expertis i affärsfrågor
                   </p>
-
                   <HashLink
                     to="/kontakta-oss#formular"
                     className="cta align-self-end mt-auto"
@@ -212,6 +170,7 @@ function Assignments() {
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
       </div>
