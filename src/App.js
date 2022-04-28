@@ -26,7 +26,7 @@ import Joblisting from './components/JobListings/JobListing';
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize('G-9G2G4LNQZP')
+    ReactGa.initialize('G-W2FTDJ4C6G')
 
     ReactGa.send("pageview")
 }, [])
